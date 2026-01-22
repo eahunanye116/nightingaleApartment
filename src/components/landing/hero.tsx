@@ -27,9 +27,9 @@ export function Hero() {
   };
 
   return (
-    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden py-16 text-white sm:py-20 md:py-28">
+    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden py-24 text-white sm:py-28 md:py-32">
       <Image
-        src="https://i.postimg.cc/MKBF9D5V/web-bg.jpg"
+        src="https://i.postimg.cc/4NFF40dX/Whats-App-Image-2026-01-22-at-11-53-55-PM.jpg"
         alt="Luxury apartment interior"
         fill
         className="object-cover"
