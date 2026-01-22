@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 
 export function AppHeader() {
   return (
-    <header className="border-b bg-card">
+    <header className="border-b bg-secondary">
       <div className="container mx-auto flex max-w-screen-xl items-center justify-between p-4 sm:p-6">
         <Link href="/" className="flex items-center gap-3">
           <Logo />
