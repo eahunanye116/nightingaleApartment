@@ -18,7 +18,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['"Lato"', 'sans-serif'],
-        headline: ['"Montserrat"', 'sans-serif'],
+        headline: ['"Tinos"', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
