@@ -32,7 +32,7 @@ export function Hero() {
         src="https://i.postimg.cc/4NFF40dX/Whats-App-Image-2026-01-22-at-11-53-55-PM.jpg"
         alt="Luxury apartment interior"
         fill
-        className="object-cover"
+        className="object-contain"
         priority
         data-ai-hint="living room interior"
       />
@@ -41,7 +41,7 @@ export function Hero() {
       <div className="container relative z-10 mx-auto grid max-w-screen-xl items-center gap-12 px-4 lg:grid-cols-2">
         <div className="space-y-6 text-center lg:text-left">
           <p className="font-bold uppercase tracking-widest text-primary">ENJOY THE FINEST STAYS</p>
-          <h1 className="font-headline text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
+          <h1 className="font-headline text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
             Discover Your Home Away From Home
           </h1>
           <p className="text-base text-gray-200 sm:text-lg">
