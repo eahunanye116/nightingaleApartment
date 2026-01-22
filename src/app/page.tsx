@@ -15,19 +15,19 @@ export default function Home() {
       <AnimateOnScroll>
         <BookingSearch />
       </AnimateOnScroll>
-      <AnimateOnScroll>
+      <AnimateOnScroll animationClass="animate-fade-in-left">
         <Gallery />
       </AnimateOnScroll>
-      <AnimateOnScroll>
+      <AnimateOnScroll animationClass="animate-fade-in-right">
         <About />
       </AnimateOnScroll>
       <AnimateOnScroll>
         <OtherAmenities />
       </AnimateOnScroll>
-      <AnimateOnScroll>
+      <AnimateOnScroll animationClass="animate-fade-in-left">
         <SpecialOffer />
       </AnimateOnScroll>
-      <AnimateOnScroll>
+      <AnimateOnScroll animationClass="animate-fade-in-right">
         <Testimonials />
       </AnimateOnScroll>
       <AnimateOnScroll>

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 export function Gallery() {
   const galleryImages = [
@@ -19,19 +20,31 @@ export function Gallery() {
         <p className="mt-4 max-w-2xl text-muted-foreground">
           Take a closer look at our villas, apartments, and shared spaces. From modern interiors to stylish hangouts, see the style and comfort that await you.
         </p>
-        <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {galleryImages.map((image, index) => image && (
-            <div key={index} className="group relative h-[450px] w-full overflow-hidden rounded-lg">
-              <Image
-                src={image.imageUrl}
-                alt={image.description}
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-                data-ai-hint={image.imageHint}
-              />
-            </div>
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="mt-12 w-full"
+        >
+          <CarouselContent>
+            {galleryImages.map((image, index) => image && (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <div className="group relative h-[450px] w-full overflow-hidden rounded-lg">
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.description}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    data-ai-hint={image.imageHint}
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="ml-16" />
+          <CarouselNext className="mr-16" />
+        </Carousel>
       </div>
     </section>
   );
