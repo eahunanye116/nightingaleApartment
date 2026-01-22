@@ -1,29 +1,22 @@
 'use client';
 
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { ArrowDown } from 'lucide-react';
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-background');
-
   return (
-    <section className="relative flex h-[80vh] min-h-[500px] w-full items-center justify-center text-white sm:h-screen sm:min-h-[700px]">
-      <div className="absolute inset-0">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
-      </div>
+    <section className="relative flex h-[80vh] min-h-[500px] w-full items-center justify-center overflow-hidden text-white sm:h-screen sm:min-h-[700px]">
+      <video
+        src="https://cdn-cf-east.streamable.com/video/mp4/vfuqzg.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute left-0 top-0 z-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
+      
       <div className="container relative z-10 mx-auto flex max-w-screen-xl flex-col items-center gap-8 px-4 text-center sm:px-6">
         <div className="max-w-3xl space-y-6">
           <p className="font-bold uppercase tracking-widest text-primary">ENJOY THE FINEST STAYS</p>
