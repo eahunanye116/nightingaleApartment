@@ -5,16 +5,12 @@ import { OtherAmenities } from '@/components/landing/other-amenities';
 import { SpecialOffer } from '@/components/landing/special-offer';
 import { Testimonials } from '@/components/landing/testimonials';
 import { CtaBanner } from '@/components/landing/cta-banner';
-import { BookingSearch } from '@/components/landing/booking-search';
 import { AnimateOnScroll } from '@/components/animate-on-scroll';
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <AnimateOnScroll>
-        <BookingSearch />
-      </AnimateOnScroll>
       <AnimateOnScroll animationClass="animate-fade-in-left">
         <Gallery />
       </AnimateOnScroll>
