@@ -1,21 +1,21 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import Link from 'next/link';
 
 export function Gallery() {
-  const galleryImages = [
-    PlaceHolderImages.find(img => img.id === 'gallery-1'),
-    PlaceHolderImages.find(img => img.id === 'gallery-2'),
-    PlaceHolderImages.find(img => img.id === 'gallery-3'),
-  ].filter(Boolean);
+  const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery-full-')).slice(0, 5);
 
   return (
     <section className="bg-background py-16 sm:py-24">
       <div className="container mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <h2 className="font-headline text-4xl font-bold md:text-5xl">Our Gallery</h2>
-          <Button variant="outline">View All</Button>
+          <Button asChild variant="outline">
+            <Link href="/gallery">View All</Link>
+          </Button>
         </div>
         <p className="mt-4 max-w-2xl text-muted-foreground">
           Take a closer look at our villas, apartments, and shared spaces. From modern interiors to stylish hangouts, see the style and comfort that await you.

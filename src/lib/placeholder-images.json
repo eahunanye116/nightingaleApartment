@@ -7,24 +7,6 @@
       "imageHint": "living room interior"
     },
     {
-      "id": "gallery-1",
-      "description": "Modern bedroom with orange accents",
-      "imageUrl": "https://images.unsplash.com/photo-1633948393301-d43e3ec0e5cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiZWRyb29tJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzY5MDA3NDYzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bedroom interior"
-    },
-    {
-      "id": "gallery-2",
-      "description": "Dining area with a wooden table",
-      "imageUrl": "https://images.unsplash.com/photo-1617806118233-18e1de247200?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkaW5pbmclMjByb29tfGVufDB8fHx8MTc2OTA4ODQ4N3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dining room"
-    },
-    {
-      "id": "gallery-3",
-      "description": "Simple and clean bedroom",
-      "imageUrl": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiZWRyb29tfGVufDB8fHx8MTc2OTAyMjg0MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bedroom"
-    },
-    {
       "id": "about-section-image",
       "description": "Artistic light fixture on a wall",
       "imageUrl": "https://images.unsplash.com/photo-1606170033648-5d55a3edf314?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsaWdodCUyMGZpeHR1cmV8ZW58MHx8fHwxNzY5MDM3MzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -47,6 +29,72 @@
       "description": "Modern side table",
       "imageUrl": "https://images.unsplash.com/photo-1532372320572-cda25653a26d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzaWRlJTIwdGFibGV8ZW58MHx8fHwxNzY5MTA0MDg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "side table"
+    },
+    {
+      "id": "gallery-full-1",
+      "description": "Apartment view",
+      "imageUrl": "https://i.postimg.cc/Xq64PvRw/Whats-App-Image-2026-01-22-at-11-00-46-PM.jpg",
+      "imageHint": "apartment view"
+    },
+    {
+      "id": "gallery-full-2",
+      "description": "Web background",
+      "imageUrl": "https://i.postimg.cc/MKBF9D5V/web-bg.jpg",
+      "imageHint": "apartment interior"
+    },
+    {
+      "id": "gallery-full-3",
+      "description": "Apartment view with chair",
+      "imageUrl": "https://i.postimg.cc/4NFF40dX/Whats-App-Image-2026-01-22-at-11-53-55-PM.jpg",
+      "imageHint": "apartment interior"
+    },
+    {
+      "id": "gallery-full-4",
+      "description": "Gallery image 1",
+      "imageUrl": "https://i.postimg.cc/ry9wH1px/1.jpg",
+      "imageHint": "apartment room"
+    },
+    {
+      "id": "gallery-full-5",
+      "description": "Gallery image 2",
+      "imageUrl": "https://i.postimg.cc/Pr3rXdYG/2.jpg",
+      "imageHint": "apartment room"
+    },
+    {
+      "id": "gallery-full-6",
+      "description": "Gallery image 3",
+      "imageUrl": "https://i.postimg.cc/QdFNVvJf/3.jpg",
+      "imageHint": "apartment room"
+    },
+    {
+      "id": "gallery-full-7",
+      "description": "Gallery image 4",
+      "imageUrl": "https://i.postimg.cc/SK8yf85h/4.jpg",
+      "imageHint": "apartment room"
+    },
+    {
+      "id": "gallery-full-8",
+      "description": "Gallery image 5",
+      "imageUrl": "https://i.postimg.cc/3RFYPhYL/5.jpg",
+      "imageHint": "apartment room"
+    },
+    {
+      "id": "gallery-full-9",
+      "description": "Gallery image 6",
+      "imageUrl": "https://i.postimg.cc/KjcxbWYz/6.jpg",
+      "imageHint": "apartment room"
+    },
+    {
+      "id": "gallery-full-10",
+      "description": "Gallery image 7",
+      "imageUrl": "https://i.postimg.cc/v8XGhGPL/7.jpg",
+      "imageHint": "apartment room"
+    },
+    {
+      "id": "gallery-full-11",
+      "description": "Gallery image 8",
+      "imageUrl": "https://i.postimg.cc/4NSsCBRd/8.jpg",
+      "imageHint": "apartment room"
     },
     {
       "id": "apt-1-1",
@@ -87,7 +135,7 @@
     {
       "id": "apt-4-1",
       "description": "Luxury penthouse living area",
-      "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZW50aG91c2V8ZW58MHx8fHwxNzY5MTAzNjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwZW50aG91c2V8ZW58MHx8fHwxNzY5MTAzNjE4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "penthouse"
     },
     {
@@ -105,25 +153,25 @@
     {
       "id": "host-1",
       "description": "Avatar for host Maria",
-      "imageUrl": "https://images.unsplash.com/photo-1592621385612-4d7129426394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbnxlbnwwfHx8fDE3NjkwMzI3NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1592621385612-4d7129426394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbnxlbnwwfHx8fDE3NjkwMzI3NDJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "woman"
     },
     {
       "id": "host-2",
       "description": "Avatar for host David",
-      "imageUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW58ZW58MHx8fHwxNzY5MDQyOTAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW58ZW58MHx8fHwxNzY5MDQyOTAxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "man"
     },
     {
       "id": "host-3",
       "description": "Avatar for host Chloe",
-      "imageUrl": "https://images.unsplash.com/photo-1711645169736-53327e726205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzY5MDY5ODk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1711645169736-53327e726205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzY5MDY5ODk5fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "woman smiling"
     },
     {
       "id": "host-4",
       "description": "Avatar for host Alex",
-      "imageUrl": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb258ZW58MHx8fHwxNzY5MDUwMzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZXJzb258ZW58MHx8fHwxNzY5MDUwMzA4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "person"
     }
   ]
