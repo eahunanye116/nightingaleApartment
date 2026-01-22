@@ -21,7 +21,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden py-20 text-white sm:py-24 md:py-32">
+    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden py-16 text-white sm:py-20 md:py-28">
       <Image
         src="https://i.postimg.cc/MKBF9D5V/web-bg.jpg"
         alt="Luxury apartment interior"
