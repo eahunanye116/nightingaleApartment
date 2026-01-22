@@ -5,7 +5,7 @@ import { AppFooter } from '@/components/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Geminge Apartments',
+  title: 'Nightingale Apartments',
   description: 'Discover Your Home Away From Home.',
 };
 

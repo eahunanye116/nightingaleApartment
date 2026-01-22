@@ -20,9 +20,9 @@ export function About() {
             )}
           </div>
           <div className="prose prose-lg max-w-none text-foreground">
-            <h2 className="font-headline text-4xl font-bold md:text-5xl">About Geminge Apartments</h2>
+            <h2 className="font-headline text-4xl font-bold md:text-5xl">About Nightingale Apartments</h2>
             <p>
-              At Geminge Apartments, we believe in combining comfort, convenience, and affordability. Our homes are thoughtfully designed and fully furnished - giving you everything you need for a peaceful stay.
+              At Nightingale Apartments, we believe in combining comfort, convenience, and affordability. Our homes are thoughtfully designed and fully furnished - giving you everything you need for a peaceful stay.
             </p>
             <p>
               Each is valued and equipped to meet the latest in high standards, with modern amenities and regular cleaning, to ensure a stable experience from check-in to check-out. Whether you're on business travel, family, or vacation, our friendly team is here to make sure you enjoy your stay with us.

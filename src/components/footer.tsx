@@ -7,9 +7,9 @@ export function AppFooter() {
       <div className="container mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <h2 className="font-headline text-2xl font-bold text-foreground">GEMINGE</h2>
+            <h2 className="font-headline text-2xl font-bold text-foreground">Nightingale Apartments</h2>
             <p className="mt-4 text-sm">
-              Discover your home away from home with Geminge Apartments. We provide comfort, luxury, and convenience.
+              Discover your home away from home with Nightingale Apartments. We provide comfort, luxury, and convenience.
             </p>
           </div>
           
@@ -48,7 +48,7 @@ export function AppFooter() {
         
         <div className="mt-8 border-t border-border pt-6">
           <p className="text-center text-sm">
-            &copy; {new Date().getFullYear()} Geminge Apartments. All rights reserved.
+            &copy; {new Date().getFullYear()} Nightingale Apartments. All rights reserved.
           </p>
         </div>
       </div>

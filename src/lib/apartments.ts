@@ -34,7 +34,7 @@ export const apartments: Omit<Apartment, 'images' | 'host.avatar'>[] = [
   },
   {
     id: '2',
-    name: 'Geminge Villa',
+    name: 'Nightingale Villa',
     location: 'Los Angeles, CA',
     pricePerNight: 160,
     guests: 4,

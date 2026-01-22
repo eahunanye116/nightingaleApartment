@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { Star } from 'lucide-react';
 
 export function SpecialOffer() {
-  const specialOfferApartment = apartments.find(apt => apt.name === 'Geminge Villa');
+  const specialOfferApartment = apartments.find(apt => apt.name === 'Nightingale Villa');
   const mainImage = PlaceHolderImages.find(img => img.id === 'special-offer-main');
   const thumb1 = PlaceHolderImages.find(img => img.id === 'special-offer-thumb-1');
   const thumb2 = PlaceHolderImages.find(img => img.id === 'special-offer-thumb-2');
