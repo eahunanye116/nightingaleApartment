@@ -1,11 +1,11 @@
 import type { Apartment } from './types';
 
 export const allAmenities = [
+  { name: 'House Keeping', iconName: 'Sparkles' },
+  { name: 'Parking', iconName: 'ParkingCircle' },
+  { name: 'Laundry', iconName: 'WashingMachine' },
+  { name: 'Security', iconName: 'Shield' },
   { name: 'Wifi', iconName: 'Wifi' },
-  { name: 'Free Parking', iconName: 'ParkingCircle' },
-  { name: 'Kitchen', iconName: 'Soup' },
-  { name: 'TV', iconName: 'Tv' },
-  { name: 'Air Conditioning', iconName: 'Wind' },
 ];
 
 export const apartments: Omit<Apartment, 'images' | 'host.avatar'>[] = [
@@ -23,9 +23,8 @@ export const apartments: Omit<Apartment, 'images' | 'host.avatar'>[] = [
     description: 'A bright and spacious loft in the heart of the city. Perfect for couples looking to explore the best of New York. Enjoy stunning views and modern amenities.',
     amenities: [
       { name: 'Wifi', iconName: 'Wifi' },
-      { name: 'Kitchen', iconName: 'Soup' },
-      { name: 'TV', iconName: 'Tv' },
-      { name: 'Air Conditioning', iconName: 'Wind' },
+      { name: 'Laundry', iconName: 'WashingMachine' },
+      { name: 'Security', iconName: 'Shield' },
     ],
     imageIds: ['apt-1-1', 'apt-1-2', 'apt-1-3'],
     host: {
@@ -35,18 +34,18 @@ export const apartments: Omit<Apartment, 'images' | 'host.avatar'>[] = [
   },
   {
     id: '2',
-    name: 'Rooftop Terrace Haven',
+    name: 'Geminge Villa',
     location: 'Los Angeles, CA',
-    pricePerNight: 350,
+    pricePerNight: 160,
     guests: 4,
     bedrooms: 2,
     beds: 2,
     baths: 2,
     rating: 4.95,
     reviews: 85,
-    description: 'Experience luxury living with a private rooftop terrace offering panoramic views of the city. This two-bedroom apartment is ideal for families or small groups.',
+    description: 'Stunning 2-bedroom mountain villa with full sea view, 5-star living, and many luxurious surroundings - First Class!',
     amenities: allAmenities,
-    imageIds: ['apt-2-1', 'apt-2-2', 'apt-2-3'],
+    imageIds: ['special-offer-main', 'special-offer-thumb-1', 'special-offer-thumb-2'],
     host: {
       name: 'David',
       avatarId: 'host-2',
@@ -66,7 +65,7 @@ export const apartments: Omit<Apartment, 'images' | 'host.avatar'>[] = [
     description: 'A cozy and charming studio with a beautiful private garden. Located in a quiet neighborhood, it\'s the perfect romantic getaway in the city of lights.',
     amenities: [
       { name: 'Wifi', iconName: 'Wifi' },
-      { name: 'Kitchen', iconName: 'Soup' },
+      { name: 'House Keeping', iconName: 'Sparkles' },
     ],
     imageIds: ['apt-3-1', 'apt-3-2', 'apt-3-3'],
     host: {
@@ -91,48 +90,6 @@ export const apartments: Omit<Apartment, 'images' | 'host.avatar'>[] = [
     host: {
       name: 'Alex',
       avatarId: 'host-4',
-    },
-  },
-  {
-    id: '5',
-    name: 'Family Fun by the Lake',
-    location: 'Orlando, FL',
-    pricePerNight: 220,
-    guests: 8,
-    bedrooms: 3,
-    beds: 5,
-    baths: 2,
-    rating: 4.7,
-    reviews: 150,
-    description: 'The perfect spot for a family vacation! Close to all major theme parks, this spacious home includes a game room and access to a community pool.',
-    amenities: allAmenities,
-    imageIds: ['apt-5-1', 'apt-5-2', 'apt-5-3'],
-    host: {
-      name: 'Maria',
-      avatarId: 'host-1',
-    },
-  },
-  {
-    id: '6',
-    name: 'Minimalist Urban Retreat',
-    location: 'Tokyo, Japan',
-    pricePerNight: 200,
-    guests: 2,
-    bedrooms: 1,
-    beds: 1,
-    baths: 1,
-    rating: 4.88,
-    reviews: 95,
-    description: 'Find peace and tranquility in this minimalist apartment. Designed for focus and relaxation, it offers a clean, modern aesthetic in a bustling city.',
-    amenities: [
-      { name: 'Wifi', iconName: 'Wifi' },
-      { name: 'Kitchen', iconName: 'Soup' },
-      { name: 'Air Conditioning', iconName: 'Wind' },
-    ],
-    imageIds: ['apt-6-1', 'apt-6-2', 'apt-6-3'],
-    host: {
-      name: 'David',
-      avatarId: 'host-2',
     },
   },
 ];

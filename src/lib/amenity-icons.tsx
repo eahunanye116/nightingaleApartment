@@ -1,13 +1,13 @@
 import React from 'react';
-import { Wifi, ParkingCircle, Soup, Tv, Wind } from 'lucide-react';
+import { Wifi, ParkingCircle, WashingMachine, Shield, Sparkles } from 'lucide-react';
 import type { LucideProps } from 'lucide-react';
 
 const amenityIcons: Record<string, React.FC<LucideProps>> = {
   Wifi,
   ParkingCircle,
-  Soup,
-  Tv,
-  Wind,
+  WashingMachine,
+  Shield,
+  Sparkles,
 };
 
 export function AmenityIcon({ name, ...props }: { name: string } & LucideProps) {

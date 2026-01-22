@@ -5,8 +5,8 @@ import { AppFooter } from '@/components/footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Nightingale',
-  description: 'Find and book your next getaway.',
+  title: 'Geminge Apartments',
+  description: 'Discover Your Home Away From Home.',
 };
 
 export default function RootLayout({
