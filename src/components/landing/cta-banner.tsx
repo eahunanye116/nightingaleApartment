@@ -8,7 +8,7 @@ export function CtaBanner() {
           <h2 className="text-center font-semibold sm:text-left">
             Speak to us about your reservation plan, we're here to help.
           </h2>
-          <Button size="lg" className="bg-zinc-800 text-white hover:bg-zinc-700">Chat with us</Button>
+          <Button size="lg">Chat with us</Button>
         </div>
       </div>
     </section>
