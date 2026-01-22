@@ -2,7 +2,6 @@
 
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { ArrowDown } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -35,9 +34,6 @@ export function Hero() {
                 <Link href="/apartments/2">View The Villa</Link>
             </Button>
         </div>
-      </div>
-      <div className="absolute bottom-8 z-10 animate-bounce">
-        <ArrowDown className="h-8 w-8" />
       </div>
     </section>
   );
