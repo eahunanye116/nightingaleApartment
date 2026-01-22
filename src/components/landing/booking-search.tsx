@@ -21,7 +21,7 @@ export function BookingSearch() {
 
   return (
     <section id="booking" className="bg-muted py-16 sm:py-24 scroll-mt-20">
-        <div className="container mx-auto max-w-screen-md">
+        <div className="mx-auto max-w-screen-md px-4">
             <Card className="shadow-2xl">
                 <CardHeader className="text-center">
                     <CardTitle className="font-headline text-4xl font-bold md:text-5xl">Book Your Stay</CardTitle>
