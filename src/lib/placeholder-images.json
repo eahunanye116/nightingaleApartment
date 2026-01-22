@@ -1,3 +1,136 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "apt-1-1",
+      "description": "Sunny living room with large windows",
+      "imageUrl": "https://images.unsplash.com/photo-1564078516393-cf04bd966897?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsaXZpbmclMjByb29tfGVufDB8fHx8MTc2OTAxMzczNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "living room"
+    },
+    {
+      "id": "apt-1-2",
+      "description": "Modern kitchen with island",
+      "imageUrl": "https://images.unsplash.com/photo-1622372738946-62e02505feb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxraXRjaGVufGVufDB8fHx8MTc2OTA1OTI4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kitchen"
+    },
+    {
+      "id": "apt-1-3",
+      "description": "Cozy bedroom with a view",
+      "imageUrl": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxiZWRyb29tfGVufDB8fHx8MTc2OTAyMjg0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bedroom"
+    },
+    {
+      "id": "apt-2-1",
+      "description": "Spacious loft with brick walls",
+      "imageUrl": "https://images.unsplash.com/photo-1619989652700-9984844cb0ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2Z0JTIwYXBhcnRtZW50fGVufDB8fHx8MTc2ODk4NTg1NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "loft apartment"
+    },
+    {
+      "id": "apt-2-2",
+      "description": "Bedroom in a loft apartment",
+      "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiZWRyb29tfGVufDB8fHx8MTc2OTAyMjg0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bedroom"
+    },
+    {
+      "id": "apt-2-3",
+      "description": "Rooftop terrace with city view",
+      "imageUrl": "https://images.unsplash.com/photo-1626279484248-59d4cc4ab19f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyb29mdG9wJTIwdGVycmFjZXxlbnwwfHx8fDE3NjkwNjM2MjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rooftop terrace"
+    },
+    {
+      "id": "apt-3-1",
+      "description": "Charming studio with wooden beams",
+      "imageUrl": "https://images.unsplash.com/photo-1633505765486-e404bbbec654?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzdHVkaW8lMjBhcGFydG1lbnR8ZW58MHx8fHwxNzY5MDg1MTM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "studio apartment"
+    },
+    {
+      "id": "apt-3-2",
+      "description": "Quaint kitchenette in a studio",
+      "imageUrl": "https://images.unsplash.com/photo-1758910077752-4f3b470dfff0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxraXRjaGVuZXR0ZXxlbnwwfHx8fDE3NjkwODUxMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kitchenette"
+    },
+    {
+      "id": "apt-3-3",
+      "description": "Bathroom with vintage tiles",
+      "imageUrl": "https://images.unsplash.com/photo-1629079447777-1e605162dc8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiYXRocm9vbXxlbnwwfHx8fDE3NjkwNTkyODZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bathroom"
+    },
+    {
+      "id": "apt-4-1",
+      "description": "Luxury penthouse living area",
+      "imageUrl": "https://images.unsplash.com/photo-1542928658-22251e208ac1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZW50aG91c2V8ZW58MHx8fHwxNzY5MTAzNjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "penthouse"
+    },
+    {
+      "id": "apt-4-2",
+      "description": "Master bedroom with panoramic windows",
+      "imageUrl": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYXN0ZXIlMjBiZWRyb29tfGVufDB8fHx8MTc2OTAzNjk4NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "master bedroom"
+    },
+    {
+      "id": "apt-4-3",
+      "description": "Private balcony with seating",
+      "imageUrl": "https://images.unsplash.com/photo-1613013441633-785518cf90b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YmFsY29ueXxlbnwwfHx8fDE3NjkwNzI3Njl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "balcony"
+    },
+    {
+      "id": "apt-5-1",
+      "description": "Family-friendly apartment living room",
+      "imageUrl": "https://images.unsplash.com/photo-1560184897-67f4a3f9a7fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYW1pbHklMjByb29tfGVufDB8fHx8MTc2OTEwMzYxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "family room"
+    },
+    {
+      "id": "apt-5-2",
+      "description": "Kids bedroom with bunk beds",
+      "imageUrl": "https://images.unsplash.com/photo-1693034433366-57fbb0286641?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxraWRzJTIwYmVkcm9vbXxlbnwwfHx8fDE3NjkxMDM2MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kids bedroom"
+    },
+    {
+      "id": "apt-5-3",
+      "description": "Shared swimming pool area",
+      "imageUrl": "https://images.unsplash.com/photo-1568145675395-66a2eda0c6d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb29sfGVufDB8fHx8MTc2OTEwMzYxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pool"
+    },
+    {
+      "id": "apt-6-1",
+      "description": "Minimalist apartment with clean lines",
+      "imageUrl": "https://images.unsplash.com/photo-1605774337664-7a846e9cdf17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtaW5pbWFsaXN0JTIwaW50ZXJpb3J8ZW58MHx8fHwxNzY5MDg2NTkzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist interior"
+    },
+    {
+      "id": "apt-6-2",
+      "description": "Sleek, modern bathroom",
+      "imageUrl": "https://images.unsplash.com/photo-1631889993959-41b4e9c6e3c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBiYXRocm9vbXxlbnwwfHx8fDE3Njg5OTIxMjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern bathroom"
+    },
+    {
+      "id": "apt-6-3",
+      "description": "Workspace with a desk and chair",
+      "imageUrl": "https://images.unsplash.com/photo-1492138786289-d35ea832da43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxob21lJTIwb2ZmaWNlfGVufDB8fHx8MTc2OTEwMzYxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "home office"
+    },
+    {
+      "id": "host-1",
+      "description": "Avatar for host Maria",
+      "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3b21hbnxlbnwwfHx8fDE3NjkwMzI3NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman"
+    },
+    {
+      "id": "host-2",
+      "description": "Avatar for host David",
+      "imageUrl": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW58ZW58MHx8fHwxNzY5MDQyOTAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man"
+    },
+    {
+      "id": "host-3",
+      "description": "Avatar for host Chloe",
+      "imageUrl": "https://images.unsplash.com/photo-1598625873873-52f9aefd7d9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzY5MDY5ODk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "host-4",
+      "description": "Avatar for host Alex",
+      "imageUrl": "https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb258ZW58MHx8fHwxNzY5MDUwMzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person"
+    }
+  ]
 }
