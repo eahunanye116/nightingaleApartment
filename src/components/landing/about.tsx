@@ -14,7 +14,7 @@ export function About() {
             />
           </div>
           <div className="prose prose-lg max-w-none text-foreground">
-            <h2 className="font-headline text-4xl font-bold md:text-5xl">About Nightingale Apartments</h2>
+            <h2 className="font-headline text-4xl font-bold md:text-5xl pb-4">About Nightingale Apartments</h2>
             <p>
               At Nightingale Apartments, we believe in combining comfort, convenience, and affordability. Our homes are thoughtfully designed and fully furnished - giving you everything you need for a peaceful stay.
             </p>
