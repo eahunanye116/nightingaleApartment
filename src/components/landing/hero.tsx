@@ -16,7 +16,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 z-[1] bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
       
-      <div className="container relative z-10 mx-auto flex max-w-screen-xl flex-col items-center gap-8 px-4 pt-12 pb-8 text-center sm:px-6 sm:pt-0 sm:pb-0">
+      <div className="container relative z-10 mx-auto flex max-w-screen-xl flex-col items-center gap-8 px-4 pt-12 pb-16 text-center sm:px-6 sm:pt-0 sm:pb-8">
         <div className="max-w-3xl space-y-6">
           <p className="pt-12 font-bold uppercase tracking-widest text-primary sm:pt-0">ENJOY THE FINEST STAYS</p>
           <h1 className="font-headline text-5xl font-bold leading-tight md:text-7xl">
