@@ -1,23 +1,18 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-
 export function About() {
-  const aboutImage = PlaceHolderImages.find(img => img.id === 'about-section-image');
-
   return (
     <section className="bg-background py-16 sm:py-24">
       <div className="container mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-16">
-          <div className="relative h-[600px] w-full overflow-hidden rounded-lg">
-            {aboutImage && (
-              <Image
-                src={aboutImage.imageUrl}
-                alt={aboutImage.description}
-                fill
-                className="object-cover"
-                data-ai-hint={aboutImage.imageHint}
-              />
-            )}
+          <div className="relative h-[600px] w-full overflow-hidden rounded-lg shadow-xl">
+            <video
+              src="https://ik.imagekit.io/er5hlmosw/about%20us%20vid.mp4"
+              className="h-full w-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+            />
           </div>
           <div className="prose prose-lg max-w-none text-foreground">
             <h2 className="font-headline text-4xl font-bold md:text-5xl">About Nightingale Apartments</h2>
