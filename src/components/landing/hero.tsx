@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { apartments } from '@/lib/apartments';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -12,6 +12,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 export function Hero() {
   const router = useRouter();
   const [selectedApartmentId, setSelectedApartmentId] = useState<string | undefined>();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
 
   const handleBookNow = (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,39 +49,41 @@ export function Hero() {
           </p>
         </div>
         
-        <div className="w-full max-w-md justify-self-center lg:justify-self-end">
-           <div className="rounded-lg border border-white/20 bg-black/30 p-6 backdrop-blur-sm sm:p-8">
-                <div className="mb-6">
-                    <h2 className="font-headline text-3xl font-bold text-white">Quick Booking</h2>
-                    <p className="text-gray-200 mt-2">
-                        Ready to book? Pick your dates, and let us handle the rest.
-                    </p>
-                </div>
-                <form onSubmit={handleBookNow} className="space-y-4">
-                     <Input className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="email" placeholder="Email" required />
-                    <Select onValueChange={setSelectedApartmentId}>
-                        <SelectTrigger className="py-6 text-base bg-white/90 text-black border-transparent focus:bg-white">
-                            <SelectValue placeholder="Select your Apartment" />
-                        </SelectTrigger>
-                        <SelectContent>
-                            {apartments.map((apt) => (
-                                <SelectItem key={apt.id} value={apt.id} className="text-base">
-                                    {apt.name} - ${apt.pricePerNight}/night
-                                </SelectItem>
-                            ))}
-                        </SelectContent>
-                    </Select>
-                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                        <Input className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="text" placeholder="Check in" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
-                        <Input className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="text" placeholder="Check out" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
+        {mounted && (
+            <div className="w-full max-w-md justify-self-center lg:justify-self-end">
+            <div className="rounded-lg border border-white/20 bg-black/30 p-6 backdrop-blur-sm sm:p-8">
+                    <div className="mb-6">
+                        <h2 className="font-headline text-3xl font-bold text-white">Quick Booking</h2>
+                        <p className="text-gray-200 mt-2">
+                            Ready to book? Pick your dates, and let us handle the rest.
+                        </p>
                     </div>
-                    <Input className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="number" placeholder="Number of guests" min="1" />
-                    <Button type="submit" disabled={!selectedApartmentId} className="w-full bg-primary py-7 text-lg font-bold uppercase text-primary-foreground hover:bg-primary/90">
-                        Check Availability
-                    </Button>
-                </form>
+                    <form onSubmit={handleBookNow} className="space-y-4">
+                        <Input className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="email" placeholder="Email" required />
+                        <Select onValueChange={setSelectedApartmentId}>
+                            <SelectTrigger className="py-6 text-base bg-white/90 text-black border-transparent focus:bg-white">
+                                <SelectValue placeholder="Select your Apartment" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                {apartments.map((apt) => (
+                                    <SelectItem key={apt.id} value={apt.id} className="text-base">
+                                        {apt.name} - ${apt.pricePerNight}/night
+                                    </SelectItem>
+                                ))}
+                            </SelectContent>
+                        </Select>
+                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                            <Input className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="text" placeholder="Check in" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
+                            <Input className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="text" placeholder="Check out" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
+                        </div>
+                        <Input className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="number" placeholder="Number of guests" min="1" />
+                        <Button type="submit" disabled={!selectedApartmentId} className="w-full bg-primary py-7 text-lg font-bold uppercase text-primary-foreground hover:bg-primary/90">
+                            Check Availability
+                        </Button>
+                    </form>
+                </div>
             </div>
-        </div>
+        )}
       </div>
     </section>
   );
