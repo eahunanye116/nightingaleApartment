@@ -7,7 +7,7 @@ export function Logo() {
       alt="Nightingale Apartments Logo"
       width={100} 
       height={100}
-      className="rounded-md invert"
+      className="rounded-md"
     />
   );
 }
