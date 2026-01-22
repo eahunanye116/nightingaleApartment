@@ -115,7 +115,7 @@ export function ApartmentSearch({
 
             <div>
               <Label htmlFor="price">
-                Price Range: ${priceRange[0]} - ${priceRange[1] === 1000 ? '1000+' : priceRange[1]}
+                Price Range: ₦{priceRange[0]} - ₦{priceRange[1] === 1000 ? '1000+' : priceRange[1]}
               </Label>
               <Slider
                 id="price"

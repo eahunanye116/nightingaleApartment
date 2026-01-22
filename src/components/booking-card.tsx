@@ -115,7 +115,7 @@ export function BookingCard({ apartment }: { apartment: Apartment }) {
     if (totalCost > 0) {
       toast({
         title: "Booking Reserved!",
-        description: `Your stay for ${nights} nights has been reserved for $${totalCost}.`,
+        description: `Your stay for ${nights} nights has been reserved for ₦${totalCost}.`,
       });
       setDate(undefined);
     } else {
@@ -131,7 +131,7 @@ export function BookingCard({ apartment }: { apartment: Apartment }) {
     <Card className="shadow-lg">
       <CardHeader>
         <CardTitle className="font-headline text-2xl">
-          ${apartment.pricePerNight}{" "}
+          ₦{apartment.pricePerNight}{" "}
           <span className="text-base font-normal text-muted-foreground">/ night</span>
         </CardTitle>
       </CardHeader>
@@ -183,12 +183,12 @@ export function BookingCard({ apartment }: { apartment: Apartment }) {
               {nights > 0 && (
                 <div className="space-y-2 rounded-lg border p-4">
                   <div className="flex justify-between">
-                    <span>${apartment.pricePerNight} x {nights} nights</span>
-                    <span>${totalCost}</span>
+                    <span>₦{apartment.pricePerNight} x {nights} nights</span>
+                    <span>₦{totalCost}</span>
                   </div>
                   <div className="flex justify-between font-bold">
                     <span>Total</span>
-                    <span>${totalCost}</span>
+                    <span>₦{totalCost}</span>
                   </div>
                 </div>
               )}

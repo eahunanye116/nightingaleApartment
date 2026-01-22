@@ -20,7 +20,7 @@ export function ApartmentCard({ apartment }: { apartment: Apartment }) {
             />
           </div>
           <Badge className="absolute right-4 top-4 bg-primary/90 text-primary-foreground backdrop-blur-sm">
-            ${apartment.pricePerNight} / night
+            ₦{apartment.pricePerNight} / night
           </Badge>
         </CardHeader>
         <CardContent className="flex flex-grow flex-col p-6">

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function AppFooter() {
   return (
-    <footer className="bg-muted text-muted-foreground">
+    <footer id="contact" className="bg-muted text-muted-foreground scroll-mt-20">
       <div className="container mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-5">
           <div className="lg:col-span-2">
@@ -16,8 +16,8 @@ export function AppFooter() {
           <div>
             <h3 className="font-semibold text-foreground">Services</h3>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><Link href="#" className="hover:text-foreground">Apartments</Link></li>
-              <li><Link href="#" className="hover:text-foreground">Booking</Link></li>
+              <li><Link href="/#booking" className="hover:text-foreground">Apartments</Link></li>
+              <li><Link href="/#booking" className="hover:text-foreground">Booking</Link></li>
               <li><Link href="#" className="hover:text-foreground">Concierge</Link></li>
             </ul>
           </div>
@@ -25,8 +25,8 @@ export function AppFooter() {
           <div>
             <h3 className="font-semibold text-foreground">Quick Menu</h3>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><Link href="#" className="hover:text-foreground">About Us</Link></li>
-              <li><Link href="#" className="hover:text-foreground">Contact</Link></li>
+              <li><Link href="/#about" className="hover:text-foreground">About Us</Link></li>
+              <li><Link href="/#contact" className="hover:text-foreground">Contact</Link></li>
               <li><Link href="#" className="hover:text-foreground">FAQ</Link></li>
             </ul>
           </div>

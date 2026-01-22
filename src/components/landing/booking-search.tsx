@@ -38,7 +38,7 @@ export function BookingSearch() {
                         <SelectContent>
                             {apartments.map((apt) => (
                                 <SelectItem key={apt.id} value={apt.id} className="text-base">
-                                    {apt.name} - ${apt.pricePerNight}/night
+                                    {apt.name} - ₦{apt.pricePerNight}/night
                                 </SelectItem>
                             ))}
                         </SelectContent>

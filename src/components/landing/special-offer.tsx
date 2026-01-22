@@ -59,7 +59,7 @@ export function SpecialOffer() {
                     </div>
                      <div className="mt-6">
                         <p className="text-sm text-muted-foreground">STARTING FROM</p>
-                        <p className="text-2xl font-bold text-primary">${specialOfferApartment.pricePerNight}</p>
+                        <p className="text-2xl font-bold text-primary">₦{specialOfferApartment.pricePerNight}</p>
                     </div>
                     <Button asChild size="lg" className="mt-4 w-full sm:w-auto">
                         <Link href={`/apartments/${specialOfferApartment.id}`}>BOOK NOW</Link>
