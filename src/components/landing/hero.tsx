@@ -7,7 +7,6 @@ import { useState, useEffect } from 'react';
 import { apartments } from '@/lib/apartments';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 export function Hero() {
   const router = useRouter();
@@ -32,7 +31,7 @@ export function Hero() {
         src="https://i.postimg.cc/4NFF40dX/Whats-App-Image-2026-01-22-at-11-53-55-PM.jpg"
         alt="Luxury apartment interior"
         fill
-        className="object-contain"
+        className="object-cover"
         priority
         data-ai-hint="living room interior"
       />
