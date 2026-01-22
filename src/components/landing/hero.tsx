@@ -11,7 +11,7 @@ function HeroBookingForm() {
   return (
     <Card className="w-full border-0 bg-black/40 text-white shadow-2xl backdrop-blur-sm">
       <CardHeader>
-        <CardTitle className="font-headline text-3xl font-bold md:text-4xl">Quick Booking</CardTitle>
+        <CardTitle className="font-headline text-4xl font-bold md:text-5xl">Quick Booking</CardTitle>
         <p className="text-gray-300">Ready to book? pick your dates, and let us handle the rest.</p>
       </CardHeader>
       <CardContent>
@@ -46,19 +46,21 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-background');
 
   return (
-    <section className="relative h-[80vh] min-h-[700px] w-full text-white">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={heroImage.imageHint}
-        />
-      )}
-      <div className="absolute inset-0 bg-black/50" />
-      <div className="container relative z-10 mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-12 px-4 py-12 text-center sm:px-6 lg:h-full lg:flex-row lg:justify-between lg:py-0 lg:text-left">
+    <section className="relative w-full text-white">
+      <div className="absolute inset-0">
+        {heroImage && (
+          <Image
+            src={heroImage.imageUrl}
+            alt={heroImage.description}
+            fill
+            className="object-cover"
+            priority
+            data-ai-hint={heroImage.imageHint}
+          />
+        )}
+        <div className="absolute inset-0 bg-black/50" />
+      </div>
+      <div className="container relative z-10 mx-auto flex max-w-screen-xl flex-col items-center gap-12 px-4 py-24 text-center sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:py-32 lg:text-left">
         <div className="max-w-xl space-y-6">
           <p className="font-bold uppercase tracking-widest text-primary">ENJOY THE FINEST STAYS</p>
           <h1 className="font-headline text-5xl font-bold leading-tight md:text-7xl">
