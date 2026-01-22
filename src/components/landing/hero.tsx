@@ -6,12 +6,14 @@ import Link from 'next/link';
 export function Hero() {
   return (
     <section className="relative flex h-[80vh] min-h-[500px] w-full items-center justify-center overflow-hidden text-white sm:h-screen sm:min-h-[700px]">
-      <iframe
-        src="https://streamable.com/e/kn4m8f?autoplay=1&muted=1&nocontrols=1&loop=1"
-        allow="autoplay"
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        src="https://ik.imagekit.io/er5hlmosw/copy%20nightingale.mp4"
         className="absolute left-1/2 top-1/2 z-0 min-h-full w-auto min-w-full max-w-none -translate-x-1/2 -translate-y-1/2"
-        style={{ pointerEvents: 'none' }}
-      ></iframe>
+      />
       <div className="absolute inset-0 z-[1] bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
       
       <div className="container relative z-10 mx-auto flex max-w-screen-xl flex-col items-center gap-8 px-4 pb-8 text-center sm:px-6 sm:pb-0">
