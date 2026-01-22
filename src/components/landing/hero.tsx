@@ -9,9 +9,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 
 function HeroBookingForm() {
   return (
-    <Card className="w-full max-w-md border-0 bg-black/40 text-white shadow-2xl backdrop-blur-sm">
+    <Card className="w-full border-0 bg-black/40 text-white shadow-2xl backdrop-blur-sm">
       <CardHeader>
-        <CardTitle className="font-headline text-2xl">Quick Booking</CardTitle>
+        <CardTitle className="font-headline text-3xl font-bold md:text-4xl">Quick Booking</CardTitle>
         <p className="text-gray-300">Ready to book? pick your dates, and let us handle the rest.</p>
       </CardHeader>
       <CardContent>
@@ -58,7 +58,7 @@ export function Hero() {
         />
       )}
       <div className="absolute inset-0 bg-black/50" />
-      <div className="container relative z-10 mx-auto flex h-full max-w-screen-xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="container relative z-10 mx-auto flex max-w-screen-xl flex-col items-center justify-center gap-12 px-4 py-12 text-center sm:px-6 lg:h-full lg:flex-row lg:justify-between lg:py-0 lg:text-left">
         <div className="max-w-xl space-y-6">
           <p className="font-bold uppercase tracking-widest text-primary">ENJOY THE FINEST STAYS</p>
           <h1 className="font-headline text-5xl font-bold leading-tight md:text-7xl">
@@ -68,7 +68,7 @@ export function Hero() {
             Relax in beautifully furnished homes, enjoy modern comforts, and wake up refreshed in a space designed for comfort and convenience.
           </p>
         </div>
-        <div className="hidden lg:block">
+        <div className="w-full max-w-md">
           <HeroBookingForm />
         </div>
       </div>
