@@ -1,9 +1,13 @@
-import { Bird } from 'lucide-react';
+import Image from 'next/image';
 
 export function Logo() {
   return (
-    <div className="rounded-md border bg-primary p-2 text-primary-foreground">
-      <Bird className="h-6 w-6" />
-    </div>
+    <Image 
+      src="https://i.postimg.cc/3wWnpxD5/Whats-App-Image-2026-01-22-at-10-00-35-PM.jpg" 
+      alt="Nightingale Apartments Logo"
+      width={50} 
+      height={50}
+      className="rounded-md"
+    />
   );
 }
