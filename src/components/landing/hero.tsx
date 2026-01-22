@@ -21,7 +21,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden py-24 text-white sm:py-32">
+    <section className="relative flex min-h-screen w-full items-center justify-center overflow-hidden py-20 text-white sm:py-24 md:py-32">
       <Image
         src="https://i.postimg.cc/MKBF9D5V/web-bg.jpg"
         alt="Luxury apartment interior"
@@ -35,10 +35,10 @@ export function Hero() {
       <div className="container relative z-10 mx-auto grid max-w-screen-xl items-center gap-12 px-4 lg:grid-cols-2">
         <div className="space-y-6 text-center lg:text-left">
           <p className="font-bold uppercase tracking-widest text-primary">ENJOY THE FINEST STAYS</p>
-          <h1 className="font-headline text-5xl font-bold leading-tight md:text-7xl">
+          <h1 className="font-headline text-4xl font-bold leading-tight sm:text-5xl md:text-7xl">
             Discover Your Home Away From Home
           </h1>
-          <p className="text-lg text-gray-200 md:text-xl">
+          <p className="text-base text-gray-200 sm:text-lg md:text-xl">
             Relax in beautifully furnished homes, enjoy modern comforts, and wake up refreshed in a space designed for comfort and convenience.
           </p>
         </div>
