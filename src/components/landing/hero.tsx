@@ -87,7 +87,7 @@ Guests: ${numGuests}`;
                         </div>
                         <Input value={numGuests} onChange={(e) => setNumGuests(e.target.value)} className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="number" placeholder="Number of guests" min="1" />
                         <Button type="submit" disabled={!selectedBedrooms || !name} className="w-full bg-primary py-7 text-lg font-bold uppercase text-primary-foreground hover:bg-primary/90">
-                            Check Availability
+                            Submit
                         </Button>
                     </form>
                 </div>
