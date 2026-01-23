@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -10,7 +11,7 @@ export function SpecialOffer() {
       title: 'One Bedroom Suite',
       originalPrice: '110,000',
       discountedPrice: '90,000',
-      imageId: 'gallery-full-4',
+      imageId: 'gallery-full-1',
       imageAlt: 'Cozy and modern one bedroom suite',
       imageHint: 'apartment room',
     },
