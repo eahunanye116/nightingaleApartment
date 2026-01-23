@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { AppHeader } from '@/components/header';
 import { AppFooter } from '@/components/footer';
 import { Toaster } from '@/components/ui/toaster';
 
@@ -23,7 +22,6 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <div className="flex min-h-screen flex-col">
-          <AppHeader />
           <main className="flex-grow">{children}</main>
           <AppFooter />
         </div>

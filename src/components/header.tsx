@@ -5,19 +5,21 @@ import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 import { Menu } from 'lucide-react';
 
 const NavLinks = ({ inSheet = false }: { inSheet?: boolean }) => {
-  const linkClass = inSheet ? "text-lg" : "text-sm";
+  const linkClass = inSheet 
+    ? "text-lg font-medium transition-colors hover:text-primary" 
+    : "text-sm font-medium text-white transition-colors hover:text-white/80";
   return (
     <>
-      <Link href="/#booking" className={`${linkClass} font-medium transition-colors hover:text-primary`}>
+      <Link href="/#booking" className={linkClass}>
         Apartments
       </Link>
-      <Link href="/gallery" className={`${linkClass} font-medium transition-colors hover:text-primary`}>
+      <Link href="/gallery" className={linkClass}>
         Gallery
       </Link>
-      <Link href="/#about" className={`${linkClass} font-medium transition-colors hover:text-primary`}>
+      <Link href="/#about" className={linkClass}>
         About
       </Link>
-      <Link href="/#contact" className={`${linkClass} font-medium transition-colors hover:text-primary`}>
+      <Link href="/#contact" className={linkClass}>
         Contact
       </Link>
     </>
@@ -26,7 +28,7 @@ const NavLinks = ({ inSheet = false }: { inSheet?: boolean }) => {
 
 export function AppHeader() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="absolute top-0 z-50 w-full">
       <div className="container mx-auto flex max-w-screen-xl items-center justify-between p-4 sm:p-6">
         <Link href="/" className="flex items-center gap-3">
           <Logo />
@@ -39,7 +41,7 @@ export function AppHeader() {
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="outline" size="icon">
+              <Button variant="outline" size="icon" className="border-white/50 text-white hover:bg-white/10 hover:text-white">
                 <Menu className="h-4 w-4" />
                 <span className="sr-only">Open menu</span>
               </Button>

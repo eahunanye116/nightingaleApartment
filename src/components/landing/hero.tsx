@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { apartments } from '@/lib/apartments';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { AppHeader } from '@/components/header';
 
 export function Hero() {
   const router = useRouter();
@@ -27,6 +28,7 @@ export function Hero() {
 
   return (
     <section className="relative flex w-full items-center justify-center overflow-hidden py-20 sm:py-28 md:py-32">
+      <AppHeader />
       <Image
         src="https://i.postimg.cc/4NFF40dX/Whats-App-Image-2026-01-22-at-11-53-55-PM.jpg"
         alt="Luxury apartment interior"
