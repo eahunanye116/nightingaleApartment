@@ -52,10 +52,10 @@ export function Hero() {
         
         {mounted && (
             <div className="w-full max-w-md justify-self-center lg:justify-self-end">
-            <div className="rounded-lg border border-white/20 bg-black/30 p-6 backdrop-blur-sm sm:p-8">
+            <div className="rounded-lg border border-white/20 bg-white/20 p-6 backdrop-blur-sm sm:p-8">
                     <div className="mb-6">
-                        <h2 className="font-headline text-3xl font-bold text-white">Quick Booking</h2>
-                        <p className="text-gray-200 mt-2">
+                        <h2 className="font-headline text-3xl font-bold text-black">Quick Booking</h2>
+                        <p className="mt-2 text-gray-700">
                             Ready to book? Pick your dates, and let us handle the rest.
                         </p>
                     </div>
