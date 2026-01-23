@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function CtaBanner() {
   return (
@@ -8,7 +9,11 @@ export function CtaBanner() {
           <h2 className="text-center font-semibold sm:text-left">
             Speak to us about your reservation plan, we're here to help.
           </h2>
-          <Button size="lg">Chat with us</Button>
+          <Button size="lg" asChild>
+            <Link href="https://wa.me/2349159394751" target="_blank">
+              Chat with us
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
