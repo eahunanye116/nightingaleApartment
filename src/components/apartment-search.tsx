@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
-import type { Apartment, Amenity } from "@/lib/types";
+import type { Apartment } from "@/lib/types";
 import { allAmenities } from "@/lib/apartments";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -11,21 +11,40 @@ import { ApartmentCard } from "@/components/apartment-card";
 import { Button } from "./ui/button";
 import { refineSearchQuery } from "@/ai/flows/ai-assisted-search-query-refinement";
 import { Loader2, Sparkles } from "lucide-react";
+import { useSearchParams } from "next/navigation";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export function ApartmentSearch({
   initialApartments,
 }: {
   initialApartments: Apartment[];
 }) {
+  const searchParams = useSearchParams();
   const [searchQuery, setSearchQuery] = useState("");
   const [priceRange, setPriceRange] = useState([0, 1000]);
   const [numGuests, setNumGuests] = useState(1);
   const [selectedAmenities, setSelectedAmenities] = useState<string[]>([]);
   const [aiSuggestions, setAiSuggestions] = useState<string[]>([]);
   const [isAiLoading, setIsAiLoading] = useState(false);
+  const [numBedrooms, setNumBedrooms] = useState(0);
   
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
+
+  useEffect(() => {
+    const bedrooms = searchParams.get("bedrooms");
+    if (bedrooms) {
+        setNumBedrooms(Number(bedrooms));
+    } else {
+        setNumBedrooms(0);
+    }
+  }, [searchParams]);
 
   const filteredApartments = useMemo(() => {
     return initialApartments.filter((apt) => {
@@ -42,12 +61,13 @@ export function ApartmentSearch({
         selectedAmenities.every((amenity) =>
           apt.amenities.some((a) => a.name === amenity)
         );
+      const matchesBedrooms = numBedrooms === 0 || apt.bedrooms === numBedrooms;
 
       return (
-        matchesQuery && matchesPrice && matchesGuests && matchesAmenities
+        matchesQuery && matchesPrice && matchesGuests && matchesAmenities && matchesBedrooms
       );
     });
-  }, [searchQuery, priceRange, numGuests, selectedAmenities, initialApartments]);
+  }, [searchQuery, priceRange, numGuests, selectedAmenities, initialApartments, numBedrooms]);
 
   const handleAmenityChange = (amenityName: string) => {
     setSelectedAmenities((prev) =>
@@ -126,6 +146,21 @@ export function ApartmentSearch({
                 onValueChange={(value) => setPriceRange(value)}
                 className="mt-4"
               />
+            </div>
+
+            <div>
+              <Label>Bedrooms</Label>
+              <Select value={String(numBedrooms)} onValueChange={(value) => setNumBedrooms(Number(value))}>
+                <SelectTrigger className="mt-2">
+                  <SelectValue placeholder="Any" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="0">Any</SelectItem>
+                  <SelectItem value="1">1 Bedroom</SelectItem>
+                  <SelectItem value="2">2 Bedrooms</SelectItem>
+                  <SelectItem value="3">3 Bedrooms</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
 
             <div>

@@ -4,18 +4,17 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { apartments } from '@/lib/apartments';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 export function BookingSearch() {
   const router = useRouter();
-  const [selectedApartmentId, setSelectedApartmentId] = useState<string | undefined>();
+  const [selectedBedrooms, setSelectedBedrooms] = useState<string | undefined>();
 
   const handleBookNow = (e: React.FormEvent) => {
     e.preventDefault();
-    if (selectedApartmentId) {
-      router.push(`/apartments/${selectedApartmentId}`);
+    if (selectedBedrooms) {
+      router.push(`/apartments?bedrooms=${selectedBedrooms}`);
     }
   };
 
@@ -31,16 +30,14 @@ export function BookingSearch() {
                 </CardHeader>
                 <CardContent>
                     <form onSubmit={handleBookNow} className="space-y-4">
-                    <Select onValueChange={setSelectedApartmentId}>
+                    <Select onValueChange={setSelectedBedrooms}>
                         <SelectTrigger className="py-6 text-base">
-                            <SelectValue placeholder="Select an Apartment" />
+                            <SelectValue placeholder="Select number of bedrooms" />
                         </SelectTrigger>
                         <SelectContent>
-                            {apartments.map((apt) => (
-                                <SelectItem key={apt.id} value={apt.id} className="text-base">
-                                    {apt.name} - ₦{apt.pricePerNight}/night
-                                </SelectItem>
-                            ))}
+                            <SelectItem value="1" className="text-base">1 Bedroom</SelectItem>
+                            <SelectItem value="2" className="text-base">2 Bedrooms</SelectItem>
+                            <SelectItem value="3" className="text-base">3 Bedrooms</SelectItem>
                         </SelectContent>
                     </Select>
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -48,7 +45,7 @@ export function BookingSearch() {
                         <Input className="py-6 text-base" type="text" placeholder="Check out" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
                     </div>
                     <Input className="py-6 text-base" type="number" placeholder="Number of guests" min="1" />
-                    <Button type="submit" disabled={!selectedApartmentId} className="w-full bg-primary py-7 text-lg font-bold uppercase text-primary-foreground hover:bg-primary/90">
+                    <Button type="submit" disabled={!selectedBedrooms} className="w-full bg-primary py-7 text-lg font-bold uppercase text-primary-foreground hover:bg-primary/90">
                         Check Availability
                     </Button>
                     </form>

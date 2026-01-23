@@ -4,14 +4,13 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
-import { apartments } from '@/lib/apartments';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { AppHeader } from '@/components/header';
 
 export function Hero() {
   const router = useRouter();
-  const [selectedApartmentId, setSelectedApartmentId] = useState<string | undefined>();
+  const [selectedBedrooms, setSelectedBedrooms] = useState<string | undefined>();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -21,8 +20,8 @@ export function Hero() {
 
   const handleBookNow = (e: React.FormEvent) => {
     e.preventDefault();
-    if (selectedApartmentId) {
-      router.push(`/apartments/${selectedApartmentId}`);
+    if (selectedBedrooms) {
+      router.push(`/apartments?bedrooms=${selectedBedrooms}`);
     }
   };
 
@@ -52,25 +51,23 @@ export function Hero() {
         
         {mounted && (
             <div className="w-full max-w-md">
-            <div className="border border-white/20 bg-white/20 p-6 backdrop-blur-sm sm:p-8">
-                    <div className="mb-6">
-                        <h2 className="font-headline text-3xl font-bold text-white">Quick Booking</h2>
-                        <p className="mt-2 text-white">
+            <div className="border-white/20 bg-white/20 p-6 backdrop-blur-sm sm:p-8">
+                    <div className="mb-6 text-white">
+                        <h2 className="font-headline text-3xl font-bold">Quick Booking</h2>
+                        <p className="mt-2">
                             Ready to book? Pick your dates, and let us handle the rest.
                         </p>
                     </div>
                     <form onSubmit={handleBookNow} className="space-y-4">
                         <Input className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="email" placeholder="Email" required />
-                        <Select onValueChange={setSelectedApartmentId}>
+                        <Select onValueChange={setSelectedBedrooms}>
                             <SelectTrigger className="py-6 text-base bg-white/90 text-black border-transparent focus:bg-white">
-                                <SelectValue placeholder="Select your Apartment" />
+                                <SelectValue placeholder="Select number of bedrooms" />
                             </SelectTrigger>
                             <SelectContent>
-                                {apartments.map((apt) => (
-                                    <SelectItem key={apt.id} value={apt.id} className="text-base">
-                                        {apt.name} - ₦{apt.pricePerNight}/night
-                                    </SelectItem>
-                                ))}
+                                <SelectItem value="1" className="text-base">1 Bedroom</SelectItem>
+                                <SelectItem value="2" className="text-base">2 Bedrooms</SelectItem>
+                                <SelectItem value="3" className="text-base">3 Bedrooms</SelectItem>
                             </SelectContent>
                         </Select>
                         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -78,7 +75,7 @@ export function Hero() {
                             <Input className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="text" placeholder="Check out" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
                         </div>
                         <Input className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="number" placeholder="Number of guests" min="1" />
-                        <Button type="submit" disabled={!selectedApartmentId} className="w-full bg-primary py-7 text-lg font-bold uppercase text-primary-foreground hover:bg-primary/90">
+                        <Button type="submit" disabled={!selectedBedrooms} className="w-full bg-primary py-7 text-lg font-bold uppercase text-primary-foreground hover:bg-primary/90">
                             Check Availability
                         </Button>
                     </form>
