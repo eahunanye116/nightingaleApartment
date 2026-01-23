@@ -34,11 +34,11 @@ export function AppFooter() {
           <div>
             <h3 className="font-semibold text-foreground">Follow Us</h3>
             <div className="mt-4 flex gap-4">
-              <Link href="#" className="hover:text-foreground">
+              <Link href="https://www.instagram.com/nightingale.apartments/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
                 <Instagram className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="hover:text-foreground">
+              <Link href="https://wa.me/2349159394751" target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
                 <Phone className="h-6 w-6" />
                 <span className="sr-only">Phone</span>
               </Link>
