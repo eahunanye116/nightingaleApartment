@@ -19,7 +19,7 @@ export function SpecialOffer() {
       title: 'Two Bedroom Apartment',
       originalPrice: '150,000',
       discountedPrice: '130,000',
-      imageId: 'gallery-full-5',
+      imageId: 'gallery-full-2',
       imageAlt: 'Spacious living area of a two bedroom apartment',
       imageHint: 'apartment living room',
     },
