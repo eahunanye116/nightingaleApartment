@@ -39,7 +39,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/20 via-black/50 to-black/80" />
       
-      <div className="container relative z-10 mx-auto grid max-w-screen-xl items-center gap-12 px-4 lg:grid-cols-2">
+      <div className="container relative z-10 mx-auto flex flex-col items-center gap-12 px-4 lg:flex-row lg:justify-center">
         <div className="space-y-6 text-center lg:text-left">
           <p className="font-bold uppercase tracking-widest text-primary">ENJOY THE FINEST STAYS</p>
           <h1 className="font-headline text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
@@ -51,11 +51,11 @@ export function Hero() {
         </div>
         
         {mounted && (
-            <div className="w-full max-w-md justify-self-center lg:justify-self-end">
+            <div className="w-full max-w-md">
             <div className="border border-white/20 bg-white/20 p-6 backdrop-blur-sm sm:p-8">
                     <div className="mb-6">
                         <h2 className="font-headline text-3xl font-bold text-white">Quick Booking</h2>
-                        <p className="mt-2 text-gray-200">
+                        <p className="mt-2 text-white">
                             Ready to book? Pick your dates, and let us handle the rest.
                         </p>
                     </div>
