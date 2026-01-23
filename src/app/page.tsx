@@ -6,6 +6,7 @@ import { SpecialOffer } from '@/components/landing/special-offer';
 import { Testimonials } from '@/components/landing/testimonials';
 import { CtaBanner } from '@/components/landing/cta-banner';
 import { AnimateOnScroll } from '@/components/animate-on-scroll';
+import { BookingSearch } from '@/components/landing/booking-search';
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
       </AnimateOnScroll>
       <AnimateOnScroll animationClass="animate-fade-in-right">
         <Testimonials />
+      </AnimateOnScroll>
+      <AnimateOnScroll>
+        <BookingSearch />
       </AnimateOnScroll>
       <AnimateOnScroll>
         <CtaBanner />

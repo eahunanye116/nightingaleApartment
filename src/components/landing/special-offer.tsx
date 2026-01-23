@@ -75,7 +75,7 @@ export function SpecialOffer() {
               </CardContent>
               <CardFooter className="p-6 pt-0">
                 <Button asChild size="lg" className="w-full">
-                  <Link href="/apartments">BOOK NOW</Link>
+                  <Link href="/#booking">BOOK NOW</Link>
                 </Button>
               </CardFooter>
             </Card>

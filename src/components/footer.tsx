@@ -16,8 +16,8 @@ export function AppFooter() {
           <div>
             <h3 className="font-semibold text-foreground">Services</h3>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><Link href="/apartments" className="hover:text-foreground">Apartments</Link></li>
-              <li><Link href="/apartments" className="hover:text-foreground">Booking</Link></li>
+              <li><Link href="/" className="hover:text-foreground">Home</Link></li>
+              <li><Link href="/#booking" className="hover:text-foreground">Booking</Link></li>
             </ul>
           </div>
           
