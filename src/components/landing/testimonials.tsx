@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 const QuoteIcon = () => (
   <svg width="48" height="38" viewBox="0 0 48 38" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-primary/20">
@@ -12,8 +11,11 @@ export function Testimonials() {
   return (
     <section className="bg-background py-16 sm:py-24">
       <div className="container mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-end mb-8">
-            <Button variant="outline">View all</Button>
+        <div className="text-center mb-12">
+          <h2 className="font-headline text-4xl font-bold md:text-5xl">What Our Guests Say</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            Hear from our happy guests and see why they love staying with us.
+          </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <Card className="p-8">

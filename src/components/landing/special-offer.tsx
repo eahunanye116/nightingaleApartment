@@ -19,7 +19,7 @@ export function SpecialOffer() {
       title: 'Two Bedroom Apartment',
       originalPrice: '150,000',
       discountedPrice: '130,000',
-      imageId: 'gallery-full-2',
+      imageId: 'gallery-full-3',
       imageAlt: 'Spacious living area of a two bedroom apartment',
       imageHint: 'apartment living room',
     },
@@ -75,7 +75,7 @@ export function SpecialOffer() {
               </CardContent>
               <CardFooter className="p-6 pt-0">
                 <Button asChild size="lg" className="w-full">
-                  <Link href="/#booking">BOOK NOW</Link>
+                  <Link href="/apartments">BOOK NOW</Link>
                 </Button>
               </CardFooter>
             </Card>

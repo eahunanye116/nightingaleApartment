@@ -32,7 +32,7 @@ export default function ApartmentsPage() {
             </span>
           </Link>
           <nav className="hidden items-center gap-6 md:flex">
-            <Link href="/#booking" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+            <Link href="/apartments" className="text-sm font-medium text-primary transition-colors hover:text-primary">
               Apartments
             </Link>
             <Link href="/gallery" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">

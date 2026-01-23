@@ -7,7 +7,7 @@ const NavLinks = ({ inSheet = false }: { inSheet?: boolean }) => {
     : "text-sm font-medium text-white transition-colors hover:text-white/80";
   return (
     <>
-      <Link href="/#booking" className={linkClass}>
+      <Link href="/apartments" className={linkClass}>
         Apartments
       </Link>
       <Link href="/gallery" className={linkClass}>
