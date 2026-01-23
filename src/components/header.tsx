@@ -1,8 +1,5 @@
 import { Logo } from './logo';
 import Link from 'next/link';
-import { Button } from './ui/button';
-import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
-import { Menu } from 'lucide-react';
 
 const NavLinks = ({ inSheet = false }: { inSheet?: boolean }) => {
   const linkClass = inSheet 
@@ -38,26 +35,17 @@ export function AppHeader() {
           <NavLinks />
         </nav>
 
-        <div className="md:hidden">
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="border-white/50 text-white hover:bg-white/10 hover:text-white">
-                <Menu className="h-4 w-4" />
-                <span className="sr-only">Open menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <div className="flex flex-col gap-6 p-6">
-                 <Link href="/" className="mb-4 flex items-center gap-3">
-                  <Logo />
-                </Link>
-                <nav className="flex flex-col gap-4">
-                  <NavLinks inSheet={true} />
-                </nav>
-              </div>
-            </SheetContent>
-          </Sheet>
-        </div>
+        <nav className="flex items-center gap-4 text-sm font-medium md:hidden">
+          <Link href="/" className="text-white transition-colors hover:text-white/80">
+            Home
+          </Link>
+          <Link href="/gallery" className="text-white transition-colors hover:text-white/80">
+            Gallery
+          </Link>
+          <Link href="/#contact" className="text-white transition-colors hover:text-white/80">
+            Contact
+          </Link>
+        </nav>
       </div>
     </header>
   );
