@@ -1,10 +1,13 @@
-import { Bird } from 'lucide-react';
+import Image from 'next/image';
 
 export function Logo() {
   return (
-    <div className="flex items-center gap-2">
-       <Bird className="h-8 w-8 text-white" />
-       <span className="font-headline text-2xl font-bold text-white">Nightingale</span>
-    </div>
+    <Image
+      src="https://i.postimg.cc/y604MvVx/logo.png"
+      alt="Nightingale Logo"
+      width={150}
+      height={40}
+      className="object-contain brightness-0 invert"
+    />
   );
 }
