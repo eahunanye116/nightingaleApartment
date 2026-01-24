@@ -40,7 +40,7 @@ Guests: ${numGuests}`;
     <section className="relative flex w-full items-center justify-center overflow-hidden py-20 sm:py-28 md:py-32">
       <AppHeader />
        <Image
-        src="https://static.vecteezy.com/system/resources/thumbnails/067/796/100/small_2x/balcony-breeze-at-lofi-night-vertical-animation-background-urban-nighttime-apartment-balconies-hanging-clothes-crescent-moon-lo-fi-2d-cartoon-animated-backdrop-wallpaper-4k-chill-aesthetic-video.jpg"
+        src="https://i.postimg.cc/hPxbmyDd/balcony-breeze-at-lofi-night-vertical-animation-background-urban-nighttime-apartment-balconies-hangi.jpg"
         alt="Apartment balcony at night"
         fill
         className="object-cover md:hidden"
