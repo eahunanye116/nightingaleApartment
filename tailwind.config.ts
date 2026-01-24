@@ -115,6 +115,11 @@ export default {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.05)' },
         },
+        'magnetic-in': {
+          '0%': { opacity: '0', transform: 'scale(0.95) translateY(20px)' },
+          '60%': { opacity: '1', transform: 'scale(1.05) translateY(-5px)' },
+          '100%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -124,6 +129,7 @@ export default {
         'fade-in-left': 'fade-in-left 1s cubic-bezier(0.22, 1, 0.36, 1) forwards',
         'fade-in-right': 'fade-in-right 1s cubic-bezier(0.22, 1, 0.36, 1) forwards',
         'slow-zoom': 'slow-zoom 30s ease-in-out infinite',
+        'magnetic-in': 'magnetic-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards',
       },
     },
   },

@@ -14,9 +14,7 @@ export default function Home() {
       <Hero />
       <Gallery />
       <About />
-      <AnimateOnScroll>
-        <OtherAmenities />
-      </AnimateOnScroll>
+      <OtherAmenities />
       <AnimateOnScroll animationClass="animate-fade-in-left">
         <SpecialOffer />
       </AnimateOnScroll>
