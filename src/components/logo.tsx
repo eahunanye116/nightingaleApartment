@@ -8,6 +8,7 @@ export function Logo() {
       width={200}
       height={48}
       priority
+      className="invert"
     />
   );
 }
