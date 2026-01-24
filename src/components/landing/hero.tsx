@@ -37,7 +37,7 @@ Guests: ${numGuests}`;
   };
 
   return (
-    <section className="relative flex w-full items-center justify-center overflow-hidden pt-20 pb-5 sm:pt-28 sm:pb-7 md:pt-32 md:pb-8">
+    <section className="relative flex w-full items-center justify-center overflow-hidden pt-28 pb-5 sm:pt-40 sm:pb-7 md:pt-44 md:pb-8">
       <AppHeader />
        <Image
         src="https://i.postimg.cc/rs9yX2Gj/balcony-breeze-at-lofi-night-vertical-animation-background-urban-nighttime-apartment-balconies-hangi.jpg"
