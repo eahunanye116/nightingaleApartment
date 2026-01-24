@@ -12,9 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <AnimateOnScroll animationClass="animate-fade-in-left">
-        <Gallery />
-      </AnimateOnScroll>
+      <Gallery />
       <AnimateOnScroll animationClass="animate-fade-in-right">
         <About />
       </AnimateOnScroll>
