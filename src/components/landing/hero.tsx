@@ -57,9 +57,9 @@ Guests: ${numGuests}`;
       />
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/20 via-black/50 to-black/80" />
       
-      <div className="container relative z-10 mx-auto flex flex-col items-start gap-2 px-4 lg:flex-row lg:items-center lg:justify-start lg:gap-4 lg:px-[12.5%]">
+      <div className="container relative z-10 mx-auto flex flex-col items-start gap-1 px-4 lg:flex-row lg:items-center lg:justify-start lg:gap-2 lg:px-[12.5%]">
         <div className="w-full space-y-1 text-left lg:max-w-xl">
-          <p className="font-bold uppercase tracking-widest text-primary">ENJOY THE FINEST STAYS</p>
+          <p className="text-sm font-bold uppercase tracking-widest text-primary">ENJOY THE FINEST STAYS</p>
           <h1 className="font-headline text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
             Discover Your Home Away From Home
           </h1>
@@ -90,8 +90,8 @@ Guests: ${numGuests}`;
                             </SelectContent>
                         </Select>
                         <div className="grid grid-cols-2 gap-3 sm:gap-4">
-                            <Input value={checkIn} onChange={(e) => setCheckIn(e.target.value)} className="py-5 text-sm bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white sm:py-6 sm:text-base" type="text" placeholder="Check in" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
-                            <Input value={checkOut} onChange={(e) => setCheckOut(e.target.value)} className="py-5 text-sm bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white sm:py-6 sm:text-base" type="text" placeholder="Check out" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
+                            <Input value={checkIn} onChange={(e) => setCheckIn(e.target.value)} className="py-5 text-sm sm:py-6 bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white sm:text-base" type="text" placeholder="Check in" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
+                            <Input value={checkOut} onChange={(e) => setCheckOut(e.target.value)} className="py-5 text-sm sm:py-6 bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white sm:text-base" type="text" placeholder="Check out" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
                         </div>
                         <Input value={numGuests} onChange={(e) => setNumGuests(e.target.value)} className="py-5 text-sm bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white sm:py-6 sm:text-base" type="number" placeholder="Number of guests" min="1" />
                         <Button type="submit" disabled={!selectedBedrooms || !name} className="w-full bg-primary py-5 text-base font-bold uppercase text-primary-foreground hover:bg-primary/90 sm:py-6 sm:text-lg">
