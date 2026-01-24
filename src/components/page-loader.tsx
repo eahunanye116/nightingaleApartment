@@ -29,7 +29,7 @@ export function PageLoader() {
   return (
     <div
       className={cn(
-        "fixed inset-0 z-[200] flex items-center justify-center bg-background transition-opacity duration-700 ease-out",
+        "fixed inset-0 z-[200] flex items-center justify-center bg-black transition-opacity duration-700 ease-out",
         loading ? "opacity-100" : "opacity-0 pointer-events-none"
       )}
     >
