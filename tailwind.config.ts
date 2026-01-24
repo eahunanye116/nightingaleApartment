@@ -111,6 +111,10 @@ export default {
           'from': { opacity: '0', transform: 'translateX(20px)' },
           'to': { opacity: '1', transform: 'translateX(0)' },
         },
+        'slow-zoom': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -119,6 +123,7 @@ export default {
         'fade-in': 'fade-in 1s ease-out forwards',
         'fade-in-left': 'fade-in-left 0.8s ease-out forwards',
         'fade-in-right': 'fade-in-right 0.8s ease-out forwards',
+        'slow-zoom': 'slow-zoom 30s ease-in-out infinite',
       },
     },
   },
