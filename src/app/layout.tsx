@@ -6,9 +6,7 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   title: 'Nightingale Apartments',
   description: 'Discover Your Home Away From Home.',
-  icons: {
-    icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>N</text></svg>',
-  },
+  icons: false,
 };
 
 export default function RootLayout({
