@@ -65,7 +65,7 @@ Guests: ${numGuests}`;
           </AnimateOnScroll>
           <AnimateOnScroll animationClass="animate-fade-in-up" delay="200ms">
             <h1 className="font-headline text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
-              Discover Your Home Away From Home
+              Re-Defining hospitality Living in Port- Harcourt
             </h1>
           </AnimateOnScroll>
           <AnimateOnScroll animationClass="animate-fade-in-up" delay="400ms">
