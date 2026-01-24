@@ -7,7 +7,7 @@ const NavLinks = ({ mobile = false }: { mobile?: boolean }) => {
     { href: '/', text: 'Home', icon: Home },
     { href: '/gallery', text: 'Gallery', icon: ImageIcon },
     { href: '/about', text: 'About', icon: Building2 },
-    { href: '/#contact', text: 'Contact', icon: Phone },
+    { href: 'https://wa.me/2349159394751', text: 'Contact', icon: Phone },
   ];
 
   const baseLinkClass = 'text-sm font-medium text-white transition-colors hover:text-white/80';
@@ -16,7 +16,13 @@ const NavLinks = ({ mobile = false }: { mobile?: boolean }) => {
     return (
       <>
         {links.map(({ href, text, icon: Icon }) => (
-          <Link key={text} href={href} className={baseLinkClass}>
+          <Link 
+            key={text} 
+            href={href} 
+            className={baseLinkClass}
+            target={href.startsWith('http') ? '_blank' : undefined}
+            rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+          >
             <Icon className="h-6 w-6" />
             <span className="sr-only">{text}</span>
           </Link>
@@ -28,7 +34,13 @@ const NavLinks = ({ mobile = false }: { mobile?: boolean }) => {
   return (
     <>
       {links.map(({ href, text, icon: Icon }) => (
-        <Link key={text} href={href} className={`${baseLinkClass} flex items-center gap-2`}>
+        <Link 
+            key={text} 
+            href={href} 
+            className={`${baseLinkClass} flex items-center gap-2`}
+            target={href.startsWith('http') ? '_blank' : undefined}
+            rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+        >
           <Icon className="h-4 w-4" />
           <span>{text}</span>
         </Link>
