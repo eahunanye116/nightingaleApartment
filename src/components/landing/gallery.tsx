@@ -19,11 +19,13 @@ export function Gallery() {
               <Link href="/gallery">View All</Link>
             </Button>
           </div>
+        </AnimateOnScroll>
+        <AnimateOnScroll animationClass="animate-fade-in-left" delay="150ms">
           <p className="mt-4 max-w-2xl text-muted-foreground">
             Take a closer look at our villas, apartments, and shared spaces. From modern interiors to stylish hangouts, see the style and comfort that await you.
           </p>
         </AnimateOnScroll>
-        <AnimateOnScroll animationClass="animate-fade-in-up" delay="200ms">
+        <AnimateOnScroll animationClass="animate-fade-in-up" delay="300ms">
           <Carousel
             opts={{
               align: "start",
