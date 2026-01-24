@@ -58,8 +58,8 @@ Guests: ${numGuests}`;
       />
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/20 via-black/50 to-black/80" />
       
-      <div className="container relative z-10 mx-auto flex flex-col items-start gap-1 px-4 lg:flex-row lg:items-center lg:justify-start lg:gap-2 lg:px-[12.5%]">
-        <div className="w-full space-y-1 text-left lg:max-w-xl">
+      <div className="container relative z-10 mx-auto flex flex-col items-start gap-1 px-4 lg:flex-row lg:items-stretch lg:justify-start lg:gap-2 lg:px-[12.5%]">
+        <div className="w-full space-y-1 text-left lg:max-w-xl lg:flex lg:flex-col lg:justify-center">
           <AnimateOnScroll animationClass="animate-fade-in-up">
             <p className="text-xs font-bold uppercase tracking-widest text-primary">ENJOY THE FINEST STAYS</p>
           </AnimateOnScroll>
