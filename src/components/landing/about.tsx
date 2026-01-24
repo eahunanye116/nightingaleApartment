@@ -1,16 +1,17 @@
+import Image from "next/image";
+
 export function About() {
   return (
     <section id="about" className="bg-background py-16 sm:py-24 scroll-mt-20">
       <div className="container mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-16">
           <div className="relative h-[320px] w-full overflow-hidden rounded-lg shadow-xl">
-            <video
-              src="https://ik.imagekit.io/er5hlmosw/about%20us%20vid.mp4"
-              className="h-full w-full object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
+            <Image
+              src="https://i.postimg.cc/zfjS2V6K/Whats-App-Image-2026-01-24-at-10-28-05-AM-(1).jpg"
+              alt="Comfortable apartment living area"
+              fill
+              className="object-cover"
+              data-ai-hint="apartment living room"
             />
           </div>
           <div className="prose prose-lg max-w-none text-foreground">
