@@ -1,11 +1,11 @@
 import { Logo } from './logo';
 import Link from 'next/link';
-import { Home, LayoutGrid, Info, Phone } from 'lucide-react';
+import { Home, Info, Phone, Image as ImageIcon } from 'lucide-react';
 
 const NavLinks = ({ mobile = false }: { mobile?: boolean }) => {
   const links = [
     { href: '/', text: 'Home', icon: Home },
-    { href: '/gallery', text: 'Gallery', icon: LayoutGrid },
+    { href: '/gallery', text: 'Gallery', icon: ImageIcon },
     { href: '/about', text: 'About', icon: Info },
     { href: '/#contact', text: 'Contact', icon: Phone },
   ];
