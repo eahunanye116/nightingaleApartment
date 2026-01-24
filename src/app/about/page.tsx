@@ -15,7 +15,7 @@ export default function AboutPage() {
                 data-ai-hint="apartment interior"
             />
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                 <h1 className="font-headline text-4xl font-bold text-white sm:text-5xl md:text-6xl text-center px-4">About Nightingale</h1>
+                 <h1 className="font-headline text-4xl font-bold text-white sm:text-5xl md:text-6xl text-center px-4">About Maas Central Nightingale</h1>
             </div>
         </div>
 
