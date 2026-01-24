@@ -24,7 +24,7 @@ export function AppFooter() {
           <div>
             <h3 className="font-semibold text-foreground">Quick Menu</h3>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><Link href="/#about" className="hover:text-foreground">About Us</Link></li>
+              <li><Link href="/about" className="hover:text-foreground">About Us</Link></li>
               <li><Link href="/#contact" className="hover:text-foreground">Contact</Link></li>
             </ul>
           </div>

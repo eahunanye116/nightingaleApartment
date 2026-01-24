@@ -13,7 +13,7 @@ const NavLinks = ({ inSheet = false }: { inSheet?: boolean }) => {
       <Link href="/gallery" className={linkClass}>
         Gallery
       </Link>
-      <Link href="/#about" className={linkClass}>
+      <Link href="/about" className={linkClass}>
         About
       </Link>
       <Link href="/#contact" className={linkClass}>
@@ -41,6 +41,9 @@ export function AppHeader() {
           </Link>
           <Link href="/gallery" className="text-white transition-colors hover:text-white/80">
             Gallery
+          </Link>
+          <Link href="/about" className="text-white transition-colors hover:text-white/80">
+            About
           </Link>
           <Link href="/#contact" className="text-white transition-colors hover:text-white/80">
             Contact
