@@ -39,18 +39,26 @@ Guests: ${numGuests}`;
   return (
     <section className="relative flex w-full items-center justify-center overflow-hidden py-20 sm:py-28 md:py-32">
       <AppHeader />
+       <Image
+        src="https://static.vecteezy.com/system/resources/thumbnails/067/796/100/small_2x/balcony-breeze-at-lofi-night-vertical-animation-background-urban-nighttime-apartment-balconies-hanging-clothes-crescent-moon-lo-fi-2d-cartoon-animated-backdrop-wallpaper-4k-chill-aesthetic-video.jpg"
+        alt="Apartment balcony at night"
+        fill
+        className="object-cover md:hidden"
+        priority
+        data-ai-hint="apartment balcony night"
+      />
       <Image
         src="https://i.postimg.cc/4NFF40dX/Whats-App-Image-2026-01-22-at-11-53-55-PM.jpg"
         alt="Luxury apartment interior"
         fill
-        className="object-cover"
+        className="hidden object-cover md:block"
         priority
         data-ai-hint="living room interior"
       />
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/20 via-black/50 to-black/80" />
       
-      <div className="container relative z-10 mx-auto flex flex-col items-start gap-8 px-4 lg:flex-row lg:items-start lg:justify-between lg:px-[12.5%]">
-        <div className="w-full space-y-4 text-left lg:max-w-xl">
+      <div className="container relative z-10 mx-auto flex flex-col items-start gap-2 px-4 lg:flex-row lg:items-start lg:justify-start lg:gap-4 lg:px-[12.5%]">
+        <div className="w-full space-y-1 text-left lg:max-w-xl">
           <p className="font-bold uppercase tracking-widest text-primary">ENJOY THE FINEST STAYS</p>
           <h1 className="font-headline text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
             Discover Your Home Away From Home
@@ -81,7 +89,7 @@ Guests: ${numGuests}`;
                                 <SelectItem value="3" className="text-sm sm:text-base">3 Bedrooms</SelectItem>
                             </SelectContent>
                         </Select>
-                        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
+                        <div className="grid grid-cols-2 gap-3 sm:gap-4">
                             <Input value={checkIn} onChange={(e) => setCheckIn(e.target.value)} className="py-5 text-sm bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white sm:py-6 sm:text-base" type="text" placeholder="Check in" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
                             <Input value={checkOut} onChange={(e) => setCheckOut(e.target.value)} className="py-5 text-sm bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white sm:py-6 sm:text-base" type="text" placeholder="Check out" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
                         </div>
