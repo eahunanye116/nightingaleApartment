@@ -134,7 +134,7 @@ export default {
         'fade-in-right': 'fade-in-right 1s cubic-bezier(0.22, 1, 0.36, 1) forwards',
         'slow-zoom': 'slow-zoom 30s ease-in-out infinite',
         'magnetic-in': 'magnetic-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards',
-        'scroll-x': 'scroll-x 60s linear infinite',
+        'scroll-x': 'scroll-x 30s linear infinite',
       },
     },
   },
