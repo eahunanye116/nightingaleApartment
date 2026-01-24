@@ -62,31 +62,31 @@ Guests: ${numGuests}`;
         
         {mounted && (
             <div className="w-full max-w-md">
-            <div className="border-white/20 bg-white/20 p-6 backdrop-blur-sm sm:p-8">
-                    <div className="mb-6 text-white">
-                        <h2 className="font-headline text-3xl font-bold">Quick Booking</h2>
-                        <p className="mt-2">
+            <div className="border-white/20 bg-white/20 p-4 backdrop-blur-sm sm:p-6">
+                    <div className="mb-4 text-white sm:mb-6">
+                        <h2 className="font-headline text-2xl font-bold sm:text-3xl">Quick Booking</h2>
+                        <p className="mt-2 text-sm sm:text-base">
                             Ready to book? Pick your dates, and let us handle the rest.
                         </p>
                     </div>
-                    <form onSubmit={handleBookNow} className="space-y-4">
-                        <Input value={name} onChange={(e) => setName(e.target.value)} className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="text" placeholder="Your Name" />
+                    <form onSubmit={handleBookNow} className="space-y-3">
+                        <Input value={name} onChange={(e) => setName(e.target.value)} className="py-5 text-sm sm:py-6 sm:text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="text" placeholder="Your Name" />
                         <Select onValueChange={setSelectedBedrooms} value={selectedBedrooms}>
-                            <SelectTrigger className="py-6 text-base bg-white/90 text-black border-transparent focus:bg-white">
+                            <SelectTrigger className="py-5 text-sm sm:py-6 sm:text-base bg-white/90 text-black border-transparent focus:bg-white">
                                 <SelectValue placeholder="Select number of bedrooms" />
                             </SelectTrigger>
                             <SelectContent>
-                                <SelectItem value="1" className="text-base">1 Bedroom</SelectItem>
-                                <SelectItem value="2" className="text-base">2 Bedrooms</SelectItem>
-                                <SelectItem value="3" className="text-base">3 Bedrooms</SelectItem>
+                                <SelectItem value="1" className="text-sm sm:text-base">1 Bedroom</SelectItem>
+                                <SelectItem value="2" className="text-sm sm:text-base">2 Bedrooms</SelectItem>
+                                <SelectItem value="3" className="text-sm sm:text-base">3 Bedrooms</SelectItem>
                             </SelectContent>
                         </Select>
-                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                            <Input value={checkIn} onChange={(e) => setCheckIn(e.target.value)} className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="text" placeholder="Check in" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
-                            <Input value={checkOut} onChange={(e) => setCheckOut(e.target.value)} className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="text" placeholder="Check out" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
+                        <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                            <Input value={checkIn} onChange={(e) => setCheckIn(e.target.value)} className="py-5 text-sm sm:py-6 sm:text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="text" placeholder="Check in" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
+                            <Input value={checkOut} onChange={(e) => setCheckOut(e.target.value)} className="py-5 text-sm sm:py-6 sm:text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="text" placeholder="Check out" onFocus={(e) => e.target.type = 'date'} onBlur={(e) => e.target.type = 'text'}/>
                         </div>
-                        <Input value={numGuests} onChange={(e) => setNumGuests(e.target.value)} className="py-6 text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="number" placeholder="Number of guests" min="1" />
-                        <Button type="submit" disabled={!selectedBedrooms || !name} className="w-full bg-primary py-7 text-lg font-bold uppercase text-primary-foreground hover:bg-primary/90">
+                        <Input value={numGuests} onChange={(e) => setNumGuests(e.target.value)} className="py-5 text-sm sm:py-6 sm:text-base bg-white/90 text-black placeholder:text-gray-600 border-transparent focus:bg-white" type="number" placeholder="Number of guests" min="1" />
+                        <Button type="submit" disabled={!selectedBedrooms || !name} className="w-full bg-primary py-5 text-base font-bold uppercase text-primary-foreground hover:bg-primary/90 sm:py-6 sm:text-lg">
                             Submit
                         </Button>
                     </form>
