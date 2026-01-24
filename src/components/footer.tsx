@@ -49,7 +49,7 @@ export function AppFooter() {
             <p>&copy; {new Date().getFullYear()} Nightingale Apartments. All rights reserved.</p>
             <div className="mt-2 flex items-center justify-center gap-2">
                 <span>Built by Esan Studios</span>
-                <Link href="https://wa.me/2349167241442" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-full border bg-card px-3 py-1 text-xs font-medium text-foreground shadow-sm transition-colors hover:bg-accent">
+                <Link href="https://wa.me/2349167241442" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-full border bg-muted px-3 py-1 text-xs font-medium text-foreground shadow-sm transition-colors hover:bg-card">
                     <Phone className="h-3 w-3" />
                     Contact
                 </Link>
