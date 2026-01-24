@@ -49,8 +49,8 @@ Guests: ${numGuests}`;
       />
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/20 via-black/50 to-black/80" />
       
-      <div className="container relative z-10 mx-auto flex flex-col items-center gap-12 px-4 lg:px-[12.5%] lg:flex-row lg:justify-center">
-        <div className="space-y-6 text-center lg:text-left">
+      <div className="container relative z-10 mx-auto flex flex-col items-start gap-12 px-4 lg:px-[12.5%] lg:flex-row lg:items-center lg:justify-center">
+        <div className="space-y-6 text-left">
           <p className="font-bold uppercase tracking-widest text-primary">ENJOY THE FINEST STAYS</p>
           <h1 className="font-headline text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
             Discover Your Home Away From Home
