@@ -1,7 +1,13 @@
+import Image from 'next/image';
+
 export function Logo() {
   return (
-    <span className="font-headline text-2xl font-bold">
-      Nightingale<span className="hidden sm:inline"> Apartment</span>
-    </span>
+    <Image 
+      src="https://i.postimg.cc/rptWvTgk/logo-22-(1).jpg"
+      alt="Nightingale Apartments Logo"
+      width={200}
+      height={48}
+      priority
+    />
   );
 }
