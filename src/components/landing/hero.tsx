@@ -40,7 +40,7 @@ Guests: ${numGuests}`;
     <section className="relative flex w-full items-center justify-center overflow-hidden py-20 sm:py-28 md:py-32">
       <AppHeader />
        <Image
-        src="https://i.postimg.cc/hPxbmyDd/balcony-breeze-at-lofi-night-vertical-animation-background-urban-nighttime-apartment-balconies-hangi.jpg"
+        src="https://i.postimg.cc/rs9yX2Gj/balcony-breeze-at-lofi-night-vertical-animation-background-urban-nighttime-apartment-balconies-hangi.jpg"
         alt="Apartment balcony at night"
         fill
         className="object-cover md:hidden"
@@ -57,7 +57,7 @@ Guests: ${numGuests}`;
       />
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/20 via-black/50 to-black/80" />
       
-      <div className="container relative z-10 mx-auto flex flex-col items-start gap-2 px-4 lg:flex-row lg:items-start lg:justify-start lg:gap-4 lg:px-[12.5%]">
+      <div className="container relative z-10 mx-auto flex flex-col items-start gap-2 px-4 lg:flex-row lg:items-center lg:justify-start lg:gap-4 lg:px-[12.5%]">
         <div className="w-full space-y-1 text-left lg:max-w-xl">
           <p className="font-bold uppercase tracking-widest text-primary">ENJOY THE FINEST STAYS</p>
           <h1 className="font-headline text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
