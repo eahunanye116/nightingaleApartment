@@ -25,11 +25,11 @@ export function SpecialOffer() {
       imageHint: 'apartment living room',
     },
     {
-      title: 'Three Bedroom Penthouse',
+      title: 'Three Bedroom Apartment',
       originalPrice: '200,000',
       discountedPrice: '180,000',
       imageId: 'gallery-full-6',
-      imageAlt: 'Luxurious three bedroom penthouse with city views',
+      imageAlt: 'Luxurious three bedroom apartment with city views',
       imageHint: 'apartment interior',
     },
   ];
