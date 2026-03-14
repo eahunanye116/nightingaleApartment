@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { Wifi, ParkingCircle, WashingMachine, Shield, Sparkles, UtensilsCrossed, Waves } from 'lucide-react';
+import { Wifi, ParkingCircle, WashingMachine, Shield, Sparkles, UtensilsCrossed, Waves, Dumbbell, Martini } from 'lucide-react';
 import type { LucideProps } from 'lucide-react';
 
 const amenityIcons: Record<string, React.FC<LucideProps>> = {
@@ -10,6 +11,8 @@ const amenityIcons: Record<string, React.FC<LucideProps>> = {
   Sparkles,
   UtensilsCrossed,
   Waves,
+  Dumbbell,
+  Martini,
 };
 
 export function AmenityIcon({ name, ...props }: { name: string } & LucideProps) {

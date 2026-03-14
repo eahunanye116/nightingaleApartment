@@ -7,4 +7,6 @@ export const allAmenities = [
   { name: 'High Speed Wifi', iconName: 'Wifi' },
   { name: 'Restaurant', iconName: 'UtensilsCrossed' },
   { name: 'Swimming Pool', iconName: 'Waves' },
+  { name: 'Mini Gym', iconName: 'Dumbbell' },
+  { name: 'Smart Bar', iconName: 'Martini' },
 ];
