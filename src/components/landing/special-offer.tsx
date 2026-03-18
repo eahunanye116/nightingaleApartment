@@ -9,7 +9,7 @@ import { AnimateOnScroll } from '@/components/animate-on-scroll';
 export function SpecialOffer() {
   const offers = [
     {
-      title: 'One Bedroom Suite',
+      title: 'One Bedroom Apartment',
       originalPrice: '110,000',
       discountedPrice: '90,000',
       imageId: 'gallery-full-1',
