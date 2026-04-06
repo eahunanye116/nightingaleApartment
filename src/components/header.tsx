@@ -61,7 +61,7 @@ export function AppHeader() {
           <NavLinks />
         </nav>
 
-        <nav className="flex items-center gap-6 text-sm font-medium md:hidden">
+        <nav className="flex items-center gap-3 text-sm font-medium md:hidden">
           <NavLinks mobile />
         </nav>
       </div>
