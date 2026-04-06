@@ -7,11 +7,22 @@ import Link from 'next/link';
 import { AnimateOnScroll } from '@/components/animate-on-scroll';
 
 export function Gallery() {
-  // Filter out images used in Hero and Special Offers to avoid duplicates
-  const excludedIds = ['hero-background', 'hero-background-mobile', 'gallery-full-4', 'gallery-full-7', 'gallery-full-10'];
+  // Filter out images used in Hero, About page, and Special Offers to avoid duplicates
+  // gallery-full-3 is a direct duplicate of the hero-background URL
+  // gallery-full-2 is used as the About page hero
+  const excludedIds = [
+    'hero-background', 
+    'hero-background-mobile', 
+    'gallery-full-2', 
+    'gallery-full-3', 
+    'gallery-full-4', 
+    'gallery-full-7', 
+    'gallery-full-10'
+  ];
+  
   const galleryImages = PlaceHolderImages.filter(img => 
     img.id.startsWith('gallery-full-') && !excludedIds.includes(img.id)
-  ).slice(0, 6);
+  );
 
   return (
     <section className="bg-background py-16 sm:py-24">
@@ -38,7 +49,7 @@ export function Gallery() {
             className="mt-12 w-full"
           >
             <CarouselContent>
-              {galleryImages.map((image, index) => image && (
+              {galleryImages.map((image, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="group relative h-[450px] w-full overflow-hidden rounded-lg">
                     <Image

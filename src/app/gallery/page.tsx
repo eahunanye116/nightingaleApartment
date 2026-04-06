@@ -5,7 +5,10 @@ import { ArrowLeft } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function GalleryPage() {
-  const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery-full-'));
+  // Exclude gallery-full-3 as it's a duplicate of the hero background
+  const galleryImages = PlaceHolderImages.filter(img => 
+    img.id.startsWith('gallery-full-') && img.id !== 'gallery-full-3'
+  );
 
   return (
     <div className="bg-background">
