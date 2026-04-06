@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Button } from '@/components/ui/button';
@@ -7,6 +8,7 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { AppHeader } from '@/components/header';
 import { AnimateOnScroll } from '../animate-on-scroll';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Hero() {
   const [selectedBedrooms, setSelectedBedrooms] = useState<string | undefined>();
@@ -20,6 +22,8 @@ export function Hero() {
     setMounted(true);
   }, []);
 
+  const heroImageDesktop = PlaceHolderImages.find(img => img.id === 'hero-background');
+  const heroImageMobile = PlaceHolderImages.find(img => img.id === 'hero-background-mobile');
 
   const handleBookNow = (e: React.FormEvent) => {
     e.preventDefault();
@@ -41,20 +45,20 @@ Guests: ${numGuests}`;
     <section className="relative flex w-full items-center justify-center overflow-hidden pt-28 pb-5 sm:pt-40 sm:pb-7 md:pt-44 md:pb-8">
       <AppHeader />
        <Image
-        src="https://i.postimg.cc/rs9yX2Gj/balcony-breeze-at-lofi-night-vertical-animation-background-urban-nighttime-apartment-balconies-hangi.jpg"
-        alt="Apartment balcony at night"
+        src={heroImageMobile?.imageUrl || "https://picsum.photos/seed/mobile/600/800"}
+        alt={heroImageMobile?.description || "Apartment mobile background"}
         fill
         className="object-cover animate-slow-zoom md:hidden"
         priority
-        data-ai-hint="apartment balcony night"
+        data-ai-hint={heroImageMobile?.imageHint || "apartment interior"}
       />
       <Image
-        src="https://i.postimg.cc/4NFF40dX/Whats-App-Image-2026-01-22-at-11-53-55-PM.jpg"
-        alt="Luxury apartment interior"
+        src={heroImageDesktop?.imageUrl || "https://picsum.photos/seed/desktop/1920/1080"}
+        alt={heroImageDesktop?.description || "Luxury apartment interior"}
         fill
         className="hidden object-cover animate-slow-zoom md:block"
         priority
-        data-ai-hint="living room interior"
+        data-ai-hint={heroImageDesktop?.imageHint || "living room interior"}
       />
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-black/20 via-black/50 to-black/80" />
       

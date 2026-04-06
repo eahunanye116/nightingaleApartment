@@ -3,8 +3,14 @@
     {
       "id": "hero-background",
       "description": "Luxurious living room with warm lighting",
-      "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsaXZpbmclMjByb29tJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzY5MTA0MDkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.postimg.cc/4NFF40dX/Whats-App-Image-2026-01-22-at-11-53-55-PM.jpg",
       "imageHint": "living room interior"
+    },
+    {
+      "id": "hero-background-mobile",
+      "description": "Apartment view for mobile",
+      "imageUrl": "https://i.postimg.cc/PfCX4M8m/Whats-App-Image-2026-03-29-at-2-36-18-AM.jpg",
+      "imageHint": "apartment interior"
     },
     {
       "id": "about-section-image",
@@ -15,7 +21,7 @@
     {
       "id": "special-offer-main",
       "description": "Comfortable sofa with pillows and a throw",
-      "imageUrl": "https://images.unsplash.com/photo-1703250151890-9d299b88e886?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2ZhJTIwbGl2aW5nJTIwcm9vbXxlbnwwfHx8fDE3NjkxMDQwODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1703250151890-9d299b88e888?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2ZhJTIwbGl2aW5nJTIwcm9vbXxlbnwwfHx8fDE3NjkxMDQwODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sofa living room"
     },
     {
@@ -147,7 +153,7 @@
     {
       "id": "apt-4-3",
       "description": "Private balcony with seating",
-      "imageUrl": "https://images.unsplash.com/photo-1564829439675-0eec72f0b695?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiYWxjb255fGVufDB8fHx8MTc2OTA3Mjc2OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1564829439675-0eec72f0b695?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiYWxjb255fGVufDB8fHx8MTc2OTA3Mjc2OXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "balcony"
     },
     {
