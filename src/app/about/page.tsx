@@ -1,13 +1,16 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function AboutPage() {
+  const aboutHeroImage = PlaceHolderImages.find(img => img.id === 'gallery-full-2')?.imageUrl || "https://i.postimg.cc/4NFF40dX/Whats-App-Image-2026-01-22-at-11-53-55-PM.jpg";
+
   return (
     <div className="bg-background">
         <div className="relative h-48 w-full sm:h-64 md:h-80">
             <Image 
-                src="https://i.postimg.cc/4NFF40dX/Whats-App-Image-2026-01-22-at-11-53-55-PM.jpg"
+                src={aboutHeroImage}
                 alt="Interior of a luxury apartment"
                 fill
                 className="object-cover"

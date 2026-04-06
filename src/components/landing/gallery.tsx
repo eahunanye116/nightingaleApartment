@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -7,7 +6,11 @@ import Link from 'next/link';
 import { AnimateOnScroll } from '@/components/animate-on-scroll';
 
 export function Gallery() {
-  const galleryImages = PlaceHolderImages.filter(img => img.id.startsWith('gallery-full-')).slice(0, 5);
+  // Filter out images used in Hero (gallery-full-3) and Special Offers (gallery-full-4, 5, 6)
+  const excludedIds = ['gallery-full-3', 'gallery-full-4', 'gallery-full-5', 'gallery-full-6'];
+  const galleryImages = PlaceHolderImages.filter(img => 
+    img.id.startsWith('gallery-full-') && !excludedIds.includes(img.id)
+  ).slice(0, 6);
 
   return (
     <section className="bg-background py-16 sm:py-24">

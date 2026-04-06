@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -12,7 +11,7 @@ export function SpecialOffer() {
       title: 'One Bedroom Apartment',
       originalPrice: '110,000',
       discountedPrice: '90,000',
-      imageId: 'gallery-full-1',
+      imageId: 'gallery-full-4',
       imageAlt: 'Cozy and modern one bedroom suite',
       imageHint: 'apartment room',
     },
@@ -20,7 +19,7 @@ export function SpecialOffer() {
       title: 'Two Bedroom Apartment',
       originalPrice: '150,000',
       discountedPrice: '130,000',
-      imageId: 'gallery-full-3',
+      imageId: 'gallery-full-5',
       imageAlt: 'Spacious living area of a two bedroom apartment',
       imageHint: 'apartment living room',
     },
