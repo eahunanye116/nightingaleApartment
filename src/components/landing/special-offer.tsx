@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
@@ -19,7 +20,7 @@ export function SpecialOffer() {
       title: 'Two Bedroom Apartment',
       originalPrice: '150,000',
       discountedPrice: '130,000',
-      imageId: 'gallery-full-5',
+      imageId: 'gallery-full-7',
       imageAlt: 'Spacious living area of a two bedroom apartment',
       imageHint: 'apartment living room',
     },
@@ -27,7 +28,7 @@ export function SpecialOffer() {
       title: 'Three Bedroom Apartment',
       originalPrice: '200,000',
       discountedPrice: '180,000',
-      imageId: 'gallery-full-6',
+      imageId: 'gallery-full-10',
       imageAlt: 'Luxurious three bedroom apartment with city views',
       imageHint: 'apartment interior',
     },
@@ -58,7 +59,7 @@ export function SpecialOffer() {
               animationClass="animate-magnetic-in"
               delay={`${200 + index * 150}ms`}
             >
-              <Card className="flex h-full flex-col overflow-hidden transition-shadow hover:shadow-xl">
+              <Card className="group flex h-full flex-col overflow-hidden transition-shadow hover:shadow-xl">
                 <CardHeader className="relative p-0">
                   <div className="aspect-[4/3] w-full overflow-hidden">
                     <Image

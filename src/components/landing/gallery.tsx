@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -6,8 +7,8 @@ import Link from 'next/link';
 import { AnimateOnScroll } from '@/components/animate-on-scroll';
 
 export function Gallery() {
-  // Filter out images used in Hero (gallery-full-3) and Special Offers (gallery-full-4, 5, 6)
-  const excludedIds = ['gallery-full-3', 'gallery-full-4', 'gallery-full-5', 'gallery-full-6'];
+  // Filter out images used in Hero and Special Offers to avoid duplicates
+  const excludedIds = ['hero-background', 'hero-background-mobile', 'gallery-full-4', 'gallery-full-7', 'gallery-full-10'];
   const galleryImages = PlaceHolderImages.filter(img => 
     img.id.startsWith('gallery-full-') && !excludedIds.includes(img.id)
   ).slice(0, 6);
